@@ -1,10 +1,10 @@
-# Programiranje u Pajtonu za prvi razred gimnazije
+# Programiranje za prvi razred specijalizovanih IT odeljenja 
 
-Ovaj repozitorijum posvećen je kursu za prvi razred gimnazije za nastavnu temu Programiranje. 
+Ovaj repozitorijum posvećen je kursu za Programiranje za treći razred specijalizovanih IT odeljenja . 
 
-Kurs je na Petljom portalu dotupan ovde: https://petlja.org/kurs/477/0
+Kurs je na Petljom portalu dotupan ovde: [https://petlja.org/kurs/477/0](https://petlja.org/kurs/369/)
 
-Kirs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa sa: https://github.com/Petlja/gim1_rac_prog/releases
+Kirs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa sa: https://github.com/Petlja/specit1_prog/releases
 
 ## Konverzija *HTML*
 
