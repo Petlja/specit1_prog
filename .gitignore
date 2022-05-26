@@ -8,5 +8,5 @@ bin
 v15
 *~
 .exe
-/course
-/_build
+course.json
+_build
