@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Записивање алгоритма</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
+    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
+    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
+    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
+    <script type="text/javascript" src="../_static/simanim.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
+    <script type="text/javascript" src="../_static/pycode.js"></script>
+    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+    <script type="text/javascript" src="../_static/p5js.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/dbDirective.js"></script>
+    <script type="text/javascript" src="../_static/sql.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/regex-check.js"></script>
+    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = 'Програмирање за први разред - смер рачунарство';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'Програмирање за први разред - смер разунарство';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+    <div id="usefulLinksToggle" class="useful-links-toggle">
+        <a class="dropdown-toggle dropdown-toggle-burger" role="button" href="#" id="usefulLinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+        <div class="dropdown-menu dropdown-nav-links shadow-lg" aria-labelledby="usefulLinksDropdown" x-placement="bottom-start" style="position: absolute; transform: translate3d(-55px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">
+          <div class="links-title"> Корисни линкови</div>
+          <div class="useful-link">
+            <a href="https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/spec-it/csharpprirucnik.pdf" target="_blank">Увод у програмирање у програмском језику C#</a></div>
+          <div class="useful-link">
+            <a href="https://petlja.org/biblioteka/r/kursevi/Zbirka" target="_blank">Збирка алгоритамских задатака - основни ниво</a></div>
+          
+        </div>
+    </div>
+
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Програмирање</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-01_algoritam>
+                    <h5>1 Алгоритми</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../01_algoritam/algoritmi_01_pojam.html><div class="studioLecture" id=activity-algoritmi_01_pojam><i class="fas fa-file-alt activity-icon"></i>Појам алгоритма</div></a>
+                <a href=../01_algoritam/algoritmi_02a_zapis.html><div class="studioLecture" id=activity-algoritmi_02a_zapis><i class="fas fa-file-alt activity-icon"></i>Запис алгоритма</div></a>
+                <a href=../01_algoritam/algoritmi_02b_zapis_test.html><div class="studioLecture" id=activity-algoritmi_02b_zapis_test><i class="far fa-question-circle activity-icon"></i>Запис алгоритма - квиз</div></a>
+                <a href=../01_algoritam/algoritmi_03a_razumevanje_dijagram_test.html><div class="studioLecture" id=activity-algoritmi_03a_razumevanje_dijagram_test><i class="far fa-question-circle activity-icon"></i>Разумевање алгоритама датих дијаграмом - квиз</div></a>
+                <a href=../01_algoritam/algoritmi_03b_izvrsavanje_pseudokod_test.html><div class="studioLecture" id=activity-algoritmi_03b_izvrsavanje_pseudokod_test><i class="far fa-question-circle activity-icon"></i>Разумевање алгоритама датих псеудокодом - квиз</div></a>
+                <a href=../01_algoritam/algoritmi_04_blokovi.html><div class="studioLecture" id=activity-algoritmi_04_blokovi><i class="fas fa-file-alt activity-icon"></i>Програмирање слагањем блокова</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-02_programiranje>
+                    <h5>2 Како се програмира</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../02_programiranje/programiranje_01a_izgled_programa.html><div class="studioLecture" id=activity-programiranje_01a_izgled_programa><i class="fas fa-file-alt activity-icon"></i>Изглед програма</div></a>
+                <a href=../02_programiranje/programiranje_02a_jezicka_pravila.html><div class="studioLecture" id=activity-programiranje_02a_jezicka_pravila><i class="fas fa-file-alt activity-icon"></i>О језичким правилима</div></a>
+                <a href=../02_programiranje/programiranje_02b_jezicka_pravila_test.html><div class="studioLecture" id=activity-programiranje_02b_jezicka_pravila_test><i class="far fa-question-circle activity-icon"></i>Језичка правила - квиз</div></a>
+                <a href=../02_programiranje/programiranje_03a_okruzenje.html><div class="studioLecture" id=activity-programiranje_03a_okruzenje><i class="fas fa-file-alt activity-icon"></i>Интегрисано окружење за развој програма</div></a>
+                <a href=../02_programiranje/programiranje_03b_okruzenje_test.html><div class="studioLecture" id=activity-programiranje_03b_okruzenje_test><i class="far fa-question-circle activity-icon"></i>Интегрисано окружење - квиз</div></a>
+                <a href=../02_programiranje/programiranje_04a_CLI_vs_GUI.html><div class="studioLecture" id=activity-programiranje_04a_CLI_vs_GUI><i class="fas fa-file-alt activity-icon"></i>Кориснички интерфејс програма</div></a>
+                <a href=../02_programiranje/programiranje_04b_CLI_vs_GUI_test.html><div class="studioLecture" id=activity-programiranje_04b_CLI_vs_GUI_test><i class="far fa-question-circle activity-icon"></i>Кориснички интерфејс - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-03_numericki_tipovi_01_promenljive>
+                    <h5>3 Променљиве, подаци, типови</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../03_numericki_tipovi_01_promenljive/num_01_tipovi.html><div class="studioLecture" id=activity-num_01_tipovi><i class="fas fa-file-alt activity-icon"></i>Променљиве, подаци, типови</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-03_numericki_tipovi_02_realni>
+                    <h5>3.1 Реални бројеви</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../03_numericki_tipovi_02_realni/num_02a_realni.html><div class="studioLecture" id=activity-num_02a_realni><i class="fas fa-file-alt activity-icon"></i>Реални бројеви</div></a>
+                <a href=../03_numericki_tipovi_02_realni/num_02b_realni_test.html><div class="studioLecture" id=activity-num_02b_realni_test><i class="far fa-question-circle activity-icon"></i>Реални бројеви - квиз</div></a>
+                <a href=../03_numericki_tipovi_02_realni/Реални%20бројеви%20-%20задаци.html><div class="studioLecture" id=activity-Реални%20бројеви%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Реални бројеви - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-03_numericki_tipovi_03_celobrojni>
+                    <h5>3.2 Целобројни типови</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../03_numericki_tipovi_03_celobrojni/num_03a_celobrojni.html><div class="studioLecture" id=activity-num_03a_celobrojni><i class="fas fa-file-alt activity-icon"></i>Целобројни типови</div></a>
+                <a href=../03_numericki_tipovi_03_celobrojni/num_03b_celobrojni_test.html><div class="studioLecture" id=activity-num_03b_celobrojni_test><i class="far fa-question-circle activity-icon"></i>Целобројни типови - квиз</div></a>
+                <a href=../03_numericki_tipovi_03_celobrojni/Целобројни%20типови%20-%20задаци.html><div class="studioLecture" id=activity-Целобројни%20типови%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Целобројни типови - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-03_numericki_tipovi_04_zaokruzivanje>
+                    <h5>3.3 Конверзије и заокруживање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../03_numericki_tipovi_04_zaokruzivanje/num_04a_zaokruzivanje.html><div class="studioLecture" id=activity-num_04a_zaokruzivanje><i class="fas fa-file-alt activity-icon"></i>Конверзије нумеричких типова и заокруживање</div></a>
+                <a href=../03_numericki_tipovi_04_zaokruzivanje/num_04b_zaokruzivanje_test.html><div class="studioLecture" id=activity-num_04b_zaokruzivanje_test><i class="far fa-question-circle activity-icon"></i>Конверзије и заокруживање - квиз</div></a>
+                <a href=../03_numericki_tipovi_04_zaokruzivanje/Конверзије%20и%20заокруживање%20-%20задаци.html><div class="studioLecture" id=activity-Конверзије%20и%20заокруживање%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Конверзије и заокруживање - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-04_ostali_tipovi_01_znakovni>
+                    <h5>3.4 Знаковни подаци</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../04_ostali_tipovi_01_znakovni/ostali_tipovi_01a_znakovni.html><div class="studioLecture" id=activity-ostali_tipovi_01a_znakovni><i class="fas fa-file-alt activity-icon"></i>Знаковни подаци</div></a>
+                <a href=../04_ostali_tipovi_01_znakovni/ostali_tipovi_01b_znakovni_test.html><div class="studioLecture" id=activity-ostali_tipovi_01b_znakovni_test><i class="far fa-question-circle activity-icon"></i>Знаковни подаци - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-04_ostali_tipovi_02_string>
+                    <h5>3.5 Текстуални подаци (стрингови, ниске)</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../04_ostali_tipovi_02_string/ostali_tipovi_02a_string.html><div class="studioLecture" id=activity-ostali_tipovi_02a_string><i class="fas fa-file-alt activity-icon"></i>Текстуални подаци (стрингови, ниске)</div></a>
+                <a href=../04_ostali_tipovi_02_string/ostali_tipovi_02b_string_test.html><div class="studioLecture" id=activity-ostali_tipovi_02b_string_test><i class="far fa-question-circle activity-icon"></i>Стрингови - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-04_ostali_tipovi_03_logicki>
+                    <h5>3.6 Логички подаци</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../04_ostali_tipovi_03_logicki/ostali_tipovi_03a_logicki.html><div class="studioLecture" id=activity-ostali_tipovi_03a_logicki><i class="fas fa-file-alt activity-icon"></i>Логички подаци</div></a>
+                <a href=../04_ostali_tipovi_03_logicki/ostali_tipovi_03b_logicki_test.html><div class="studioLecture" id=activity-ostali_tipovi_03b_logicki_test><i class="far fa-question-circle activity-icon"></i>Логички подаци - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-05_grananja_00_uvod>
+                    <h5>4 Гранања</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../05_grananja_00_uvod/grananja_01a_uvod.html><div class="studioLecture" id=activity-grananja_01a_uvod><i class="fas fa-file-alt activity-icon"></i>Гранања</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-05_grananja_01_naredba_if>
+                    <h5>4.1 Наредба if</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../05_grananja_01_naredba_if/grananja_01a_if_else.html><div class="studioLecture" id=activity-grananja_01a_if_else><i class="fas fa-file-alt activity-icon"></i>Наредба if</div></a>
+                <a href=../05_grananja_01_naredba_if/grananja_01b_if_else_test.html><div class="studioLecture" id=activity-grananja_01b_if_else_test><i class="far fa-question-circle activity-icon"></i>Наредба if - квиз</div></a>
+                <a href=../05_grananja_01_naredba_if/Наредба%20if%20-%20задаци.html><div class="studioLecture" id=activity-Наредба%20if%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Наредба if - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-05_grananja_02_ostali_if>
+                    <h5>4.2 Остали облици if наредбе</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../05_grananja_02_ostali_if/grananja_02_if_ostali.html><div class="studioLecture" id=activity-grananja_02_if_ostali><i class="fas fa-file-alt activity-icon"></i>Остали облици if наредбе</div></a>
+                <a href=../05_grananja_02_ostali_if/Остали%20облици%20if%20наредбе%20-%20задаци.html><div class="studioLecture" id=activity-Остали%20облици%20if%20наредбе%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Остали облици if наредбе - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-05_grananja_03_slozeni_uslovi>
+                    <h5>4.3 Сложени услови</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../05_grananja_03_slozeni_uslovi/grananja_03a_slozeni_uslovi.html><div class="studioLecture" id=activity-grananja_03a_slozeni_uslovi><i class="fas fa-file-alt activity-icon"></i>Сложени услови</div></a>
+                <a href=../05_grananja_03_slozeni_uslovi/grananja_03b_slozeni_uslovi_test.html><div class="studioLecture" id=activity-grananja_03b_slozeni_uslovi_test><i class="far fa-question-circle activity-icon"></i>Сложени услови - квиз</div></a>
+                <a href=../05_grananja_03_slozeni_uslovi/Сложени%20услови%20-%20задаци.html><div class="studioLecture" id=activity-Сложени%20услови%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Сложени услови - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-05_grananja_04_tipicne_upotrebe>
+                    <h5>4.4 Неке типичне употребе if наредби</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../05_grananja_04_tipicne_upotrebe/grananja_04a_upotrebe_min_max.html><div class="studioLecture" id=activity-grananja_04a_upotrebe_min_max><i class="fas fa-file-alt activity-icon"></i>Налажење минимума и максимума</div></a>
+                <a href=../05_grananja_04_tipicne_upotrebe/Налажење%20минимума%20и%20максимума%20-%20задаци.html><div class="studioLecture" id=activity-Налажење%20минимума%20и%20максимума%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Налажење минимума и максимума - задаци</div></a>
+                <a href=../05_grananja_04_tipicne_upotrebe/grananja_04b_upotrebe_prebrojavanje_izdvajanje.html><div class="studioLecture" id=activity-grananja_04b_upotrebe_prebrojavanje_izdvajanje><i class="fas fa-file-alt activity-icon"></i>Пребројавање, издвајање и претрага</div></a>
+                <a href=../05_grananja_04_tipicne_upotrebe/Пребројавање%20и%20издвајање%20-%20задаци.html><div class="studioLecture" id=activity-Пребројавање%20и%20издвајање%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Пребројавање и издвајање - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-05_grananja_05_ugnezdjeno_grananje>
+                    <h5>4.5 Угнежђено гранање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../05_grananja_05_ugnezdjeno_grananje/grananja_05a_ugnezdjeno_grananje.html><div class="studioLecture" id=activity-grananja_05a_ugnezdjeno_grananje><i class="fas fa-file-alt activity-icon"></i>Угнежђено гранање</div></a>
+                <a href=../05_grananja_05_ugnezdjeno_grananje/grananja_05b_ugnezdjeno_grananje_test.html><div class="studioLecture" id=activity-grananja_05b_ugnezdjeno_grananje_test><i class="far fa-question-circle activity-icon"></i>Угнежђено гранање - квиз</div></a>
+                <a href=../05_grananja_05_ugnezdjeno_grananje/Угнежђено%20гранање%20-%20задаци.html><div class="studioLecture" id=activity-Угнежђено%20гранање%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Угнежђено гранање - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-05_grananja_06_switch>
+                    <h5>4.6 Наредба switch</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../05_grananja_06_switch/grananja_06_switch.html><div class="studioLecture" id=activity-grananja_06_switch><i class="fas fa-file-alt activity-icon"></i>Наредба switch</div></a>
+                <a href=../05_grananja_06_switch/Наредба%20switch%20-%20задаци.html><div class="studioLecture" id=activity-Наредба%20switch%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Наредба switch - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-05_grananja_07_razno>
+                    <h5>4.7 Гранања - разни задаци</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../05_grananja_07_razno/Гранања%20-%20разни%20задаци.html><div class="studioLecture" id=activity-Гранања%20-%20разни%20задаци><i class="far fa-question-circle activity-icon"></i>Гранања - разни задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-06_petlje_00_uvod>
+                    <h5>5 Петље</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../06_petlje_00_uvod/Petlje_00_uvod.html><div class="studioLecture" id=activity-Petlje_00_uvod><i class="fas fa-file-alt activity-icon"></i>Петље</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-06_petlje_01_vrste>
+                    <h5>5.1 Врсте петљи</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../06_petlje_01_vrste/Petlje_01_VrstePetlji.html><div class="studioLecture" id=activity-Petlje_01_VrstePetlji><i class="fas fa-file-alt activity-icon"></i>Врсте петљи</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-06_petlje_02_break_continue>
+                    <h5>5.2 Наредбе break и continue</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../06_petlje_02_break_continue/Petlje_02_BreakContinue.html><div class="studioLecture" id=activity-Petlje_02_BreakContinue><i class="fas fa-file-alt activity-icon"></i>Наредбе break и continue</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-06_petlje_03_osnovni_algoritmi>
+                    <h5>5.3 Основни алоритми са петљама</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../06_petlje_03_osnovni_algoritmi/Petlje_03_OsnovniAlgoritmi.html><div class="studioLecture" id=activity-Petlje_03_OsnovniAlgoritmi><i class="fas fa-file-alt activity-icon"></i>Основни алоритми са петљама</div></a>
+                <a href=../06_petlje_03_osnovni_algoritmi/Petlje_03a_AgregatneFunkcije.html><div class="studioLecture" id=activity-Petlje_03a_AgregatneFunkcije><i class="fas fa-file-alt activity-icon"></i>Агрегатне функције</div></a>
+                <a href=../06_petlje_03_osnovni_algoritmi/Агрегатне%20функције%20-%20задаци.html><div class="studioLecture" id=activity-Агрегатне%20функције%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Агрегатне функције - задаци</div></a>
+                <a href=../06_petlje_03_osnovni_algoritmi/Petlje_03b_Preslikavanja.html><div class="studioLecture" id=activity-Petlje_03b_Preslikavanja><i class="fas fa-file-alt activity-icon"></i>Пресликавања</div></a>
+                <a href=../06_petlje_03_osnovni_algoritmi/Пресликавања%20-%20задаци.html><div class="studioLecture" id=activity-Пресликавања%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Пресликавања - задаци</div></a>
+                <a href=../06_petlje_03_osnovni_algoritmi/Petlje_03c_PrebrojavanjeIzdvajanje.html><div class="studioLecture" id=activity-Petlje_03c_PrebrojavanjeIzdvajanje><i class="fas fa-file-alt activity-icon"></i>Пребројавање и издвајање</div></a>
+                <a href=../06_petlje_03_osnovni_algoritmi/Пребројавање%20и%20издвајање%20-%20задаци.html><div class="studioLecture" id=activity-Пребројавање%20и%20издвајање%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Пребројавање и издвајање - задаци</div></a>
+                <a href=../06_petlje_03_osnovni_algoritmi/Petlje_03d_Pretrazivanje.html><div class="studioLecture" id=activity-Petlje_03d_Pretrazivanje><i class="fas fa-file-alt activity-icon"></i>Претраживање</div></a>
+                <a href=../06_petlje_03_osnovni_algoritmi/Претраживање%20-%20задаци.html><div class="studioLecture" id=activity-Претраживање%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Претраживање - задаци</div></a>
+                <a href=../06_petlje_03_osnovni_algoritmi/Petlje_03e_Kombinovanje.html><div class="studioLecture" id=activity-Petlje_03e_Kombinovanje><i class="fas fa-file-alt activity-icon"></i>Сложене операције</div></a>
+                <a href=../06_petlje_03_osnovni_algoritmi/Сложене%20операције%20-%20задаци.html><div class="studioLecture" id=activity-Сложене%20операције%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Сложене операције - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-06_petlje_04_cifre>
+                    <h5>5.4 Цифре броја</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../06_petlje_04_cifre/Petlje_04_CifreBroja.html><div class="studioLecture" id=activity-Petlje_04_CifreBroja><i class="fas fa-file-alt activity-icon"></i>Цифре броја</div></a>
+                <a href=../06_petlje_04_cifre/Цифре%20броја%20-%20задаци.html><div class="studioLecture" id=activity-Цифре%20броја%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Цифре броја - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-06_petlje_05_deljivost>
+                    <h5>5.5 Дељивост</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../06_petlje_05_deljivost/Petlje_05_Deljivost.html><div class="studioLecture" id=activity-Petlje_05_Deljivost><i class="fas fa-file-alt activity-icon"></i>Дељивост</div></a>
+                <a href=../06_petlje_05_deljivost/Petlje_05a_ProstiBrojevi.html><div class="studioLecture" id=activity-Petlje_05a_ProstiBrojevi><i class="fas fa-file-alt activity-icon"></i>Прости бројеви</div></a>
+                <a href=../06_petlje_05_deljivost/Прости%20бројеви%20-%20задаци.html><div class="studioLecture" id=activity-Прости%20бројеви%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Прости бројеви - задаци</div></a>
+                <a href=../06_petlje_05_deljivost/Petlje_05b_EuklidovAlgoritam.html><div class="studioLecture" id=activity-Petlje_05b_EuklidovAlgoritam><i class="fas fa-file-alt activity-icon"></i>Еуклидов алгоритам</div></a>
+                <a href=../06_petlje_05_deljivost/Еуклидов%20алгоритам%20-%20задаци.html><div class="studioLecture" id=activity-Еуклидов%20алгоритам%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Еуклидов алгоритам - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-06_petlje_06_ugnezdjene>
+                    <h5>5.6 Угнежђене петље</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../06_petlje_06_ugnezdjene/Petlje_06_UgnezdjenePetlje1.html><div class="studioLecture" id=activity-Petlje_06_UgnezdjenePetlje1><i class="fas fa-file-alt activity-icon"></i>Угнежђене петље</div></a>
+                <a href=../06_petlje_06_ugnezdjene/Petlje_06_UgnezdjenePetlje1_test.html><div class="studioLecture" id=activity-Petlje_06_UgnezdjenePetlje1_test><i class="far fa-question-circle activity-icon"></i>Угнежђене петље - квиз</div></a>
+                <a href=../06_petlje_06_ugnezdjene/Petlje_06_UgnezdjenePetlje2.html><div class="studioLecture" id=activity-Petlje_06_UgnezdjenePetlje2><i class="fas fa-file-alt activity-icon"></i>Угнежђене петље - ASCII графика</div></a>
+                <a href=../06_petlje_06_ugnezdjene/Petlje_06_UgnezdjenePetlje2_test.html><div class="studioLecture" id=activity-Petlje_06_UgnezdjenePetlje2_test><i class="far fa-question-circle activity-icon"></i>Угнежђене петље - ASCII графика - квиз</div></a>
+                <a href=../06_petlje_06_ugnezdjene/Угнежђене%20петље%20-%20ASCII%20графика%20-%20задаци.html><div class="studioLecture" id=activity-Угнежђене%20петље%20-%20ASCII%20графика%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Угнежђене петље - ASCII графика - задаци</div></a>
+                <a href=../06_petlje_06_ugnezdjene/Petlje_06_UgnezdjenePetlje3.html><div class="studioLecture" id=activity-Petlje_06_UgnezdjenePetlje3><i class="fas fa-file-alt activity-icon"></i>Угнежђене петље - сегменти</div></a>
+                <a href=../06_petlje_06_ugnezdjene/Petlje_06_UgnezdjenePetlje3_test.html><div class="studioLecture" id=activity-Petlje_06_UgnezdjenePetlje3_test><i class="far fa-question-circle activity-icon"></i>Угнежђене петље - сегменти - квиз</div></a>
+                <a href=../06_petlje_06_ugnezdjene/Угнежђене%20петље%20-%20сегменти%20-%20задаци.html><div class="studioLecture" id=activity-Угнежђене%20петље%20-%20сегменти%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Угнежђене петље - сегменти - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-06_petlje_07_razno>
+                    <h5>5.7 Петље - разни задаци</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../06_petlje_07_razno/Petlje_07_RazniZadaci.html><div class="studioLecture" id=activity-Petlje_07_RazniZadaci><i class="fas fa-file-alt activity-icon"></i>Петље - разни задаци</div></a>
+                <a href=../06_petlje_07_razno/Петље%20-%20разни%20задаци.html><div class="studioLecture" id=activity-Петље%20-%20разни%20задаци><i class="far fa-question-circle activity-icon"></i>Петље - разни задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-07_Metodi_00_uvod>
+                    <h5>6 Статички методи</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../07_Metodi_00_uvod/Metodi_00_uvod.html><div class="studioLecture" id=activity-Metodi_00_uvod><i class="fas fa-file-alt activity-icon"></i>Статички методи</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-07_metodi_01_pisanje>
+                    <h5>6.1 Писање статичких метода</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../07_metodi_01_pisanje/Metodi_01_pisanje.html><div class="studioLecture" id=activity-Metodi_01_pisanje><i class="fas fa-file-alt activity-icon"></i>Писање статичких метода</div></a>
+                <a href=../07_metodi_01_pisanje/Metodi_01_pisanje_test.html><div class="studioLecture" id=activity-Metodi_01_pisanje_test><i class="far fa-question-circle activity-icon"></i>Писање статичких метода - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-07_metodi_02_izvrsavanje>
+                    <h5>6.2 Извршавање метода</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../07_metodi_02_izvrsavanje/Metodi_02_pozivanje.html><div class="studioLecture" id=activity-Metodi_02_pozivanje><i class="fas fa-file-alt activity-icon"></i>Извршавање метода</div></a>
+                <a href=../07_metodi_02_izvrsavanje/Metodi_02_pozivanje_test.html><div class="studioLecture" id=activity-Metodi_02_pozivanje_test><i class="far fa-question-circle activity-icon"></i>Извршавање метода - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-07_metodi_03_prenos_po_referenci>
+                    <h5>6.3 Пренос аргумената по референци</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../07_metodi_03_prenos_po_referenci/Metodi_03_reference.html><div class="studioLecture" id=activity-Metodi_03_reference><i class="fas fa-file-alt activity-icon"></i>Пренос аргумената по референци</div></a>
+                <a href=../07_metodi_03_prenos_po_referenci/Metodi_03_reference_test.html><div class="studioLecture" id=activity-Metodi_03_reference_test><i class="far fa-question-circle activity-icon"></i>Пренос аргумената по референци - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-07_metodi_04_korist>
+                    <h5>6.4 Корист од метода</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../07_metodi_04_korist/Metodi_04_korist.html><div class="studioLecture" id=activity-Metodi_04_korist><i class="fas fa-file-alt activity-icon"></i>Корист од метода</div></a>
+                <a href=../07_metodi_04_korist/Методи%20-%20задаци.html><div class="studioLecture" id=activity-Методи%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Методи - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-08_Nizovi_00_uvod>
+                    <h5>7 Низови</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../08_Nizovi_00_uvod/Nizovi_00_uvod.html><div class="studioLecture" id=activity-Nizovi_00_uvod><i class="fas fa-file-alt activity-icon"></i>Низови</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-08_nizovi_01_upotreba>
+                    <h5>7.1 Употреба низова</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../08_nizovi_01_upotreba/nizovi_01_upotreba.html><div class="studioLecture" id=activity-nizovi_01_upotreba><i class="fas fa-file-alt activity-icon"></i>Употреба низова</div></a>
+                <a href=../08_nizovi_01_upotreba/nizovi_01_upotreba_test.html><div class="studioLecture" id=activity-nizovi_01_upotreba_test><i class="far fa-question-circle activity-icon"></i>Употреба низова - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-08_nizovi_02_vezbanje>
+                    <h5>7.2 Низови - вежбање</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../08_nizovi_02_vezbanje/Низови%20-%20задаци.html><div class="studioLecture" id=activity-Низови%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Низови - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-08_nizovi_03_reference>
+                    <h5>7.3 Низ као референцирани тип</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../08_nizovi_03_reference/nizovi_03_reference.html><div class="studioLecture" id=activity-nizovi_03_reference><i class="fas fa-file-alt activity-icon"></i>Низ као референцирани тип</div></a>
+                <a href=../08_nizovi_03_reference/nizovi_03_reference_test.html><div class="studioLecture" id=activity-nizovi_03_reference_test><i class="far fa-question-circle activity-icon"></i>Низ као референцирани тип - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-08_nizovi_04_liste>
+                    <h5>7.4 Листе</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../08_nizovi_04_liste/nizovi_04_liste.html><div class="studioLecture" id=activity-nizovi_04_liste><i class="fas fa-file-alt activity-icon"></i>Листе</div></a>
+                <a href=../08_nizovi_04_liste/nizovi_04_liste_test.html><div class="studioLecture" id=activity-nizovi_04_liste_test><i class="far fa-question-circle activity-icon"></i>Листе - квиз</div></a>
+                <a href=../08_nizovi_04_liste/nizovi_05_liste_operacije.html><div class="studioLecture" id=activity-nizovi_05_liste_operacije><i class="fas fa-file-alt activity-icon"></i>Операције над листама</div></a>
+                <a href=../08_nizovi_04_liste/nizovi_05_liste_operacije_test.html><div class="studioLecture" id=activity-nizovi_05_liste_operacije_test><i class="far fa-question-circle activity-icon"></i>Операције над листама - квиз</div></a>
+                <a href=../08_nizovi_04_liste/nizovi_06_liste_efikasnost.html><div class="studioLecture" id=activity-nizovi_06_liste_efikasnost><i class="fas fa-file-alt activity-icon"></i>Листе и ефикасност</div></a>
+                <a href=../08_nizovi_04_liste/nizovi_06_liste_efikasnost_test.html><div class="studioLecture" id=activity-nizovi_06_liste_efikasnost_test><i class="far fa-question-circle activity-icon"></i>Листе и ефикасност - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-08_nizovi_05_string>
+                    <h5>7.5 Стринг и низ карактера</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../08_nizovi_05_string/nizovi_07_string_kao_niz.html><div class="studioLecture" id=activity-nizovi_07_string_kao_niz><i class="fas fa-file-alt activity-icon"></i>Стринг и низ карактера</div></a>
+                <a href=../08_nizovi_05_string/nizovi_07_string_kao_niz_test.html><div class="studioLecture" id=activity-nizovi_07_string_kao_niz_test><i class="far fa-question-circle activity-icon"></i>Стринг и низ карактера - квиз</div></a>
+                <a href=../08_nizovi_05_string/nizovi_08_string_izmena.html><div class="studioLecture" id=activity-nizovi_08_string_izmena><i class="fas fa-file-alt activity-icon"></i>Трансформисање стрингова</div></a>
+                <a href=../08_nizovi_05_string/nizovi_08_string_izmena_test.html><div class="studioLecture" id=activity-nizovi_08_string_izmena_test><i class="far fa-question-circle activity-icon"></i>Трансформисање стрингова - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-09_matrice_00_uvod>
+                    <h5>8 Матрице</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../09_matrice_00_uvod/matrice_00_uvod.html><div class="studioLecture" id=activity-matrice_00_uvod><i class="fas fa-file-alt activity-icon"></i>Матрице</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-09_matrice_01_upotreba>
+                    <h5>8.1 Употреба матрица</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../09_matrice_01_upotreba/matrice_01a_upotreba.html><div class="studioLecture" id=activity-matrice_01a_upotreba><i class="fas fa-file-alt activity-icon"></i>Употреба матрица</div></a>
+                <a href=../09_matrice_01_upotreba/matrice_01b_upotreba_test.html><div class="studioLecture" id=activity-matrice_01b_upotreba_test><i class="far fa-question-circle activity-icon"></i>Употреба матрица - квиз</div></a>
+                <a href=../09_matrice_01_upotreba/Матрице%20-%20задаци.html><div class="studioLecture" id=activity-Матрице%20-%20задаци><i class="far fa-question-circle activity-icon"></i>Матрице - задаци</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-10_korisnicki_tipovi_00_uvod>
+                    <h5>9 Кориснички дефинисани типови</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../10_korisnicki_tipovi_00_uvod/korisnicki_tipovi_00_uvod.html><div class="studioLecture" id=activity-korisnicki_tipovi_00_uvod><i class="fas fa-file-alt activity-icon"></i>Кориснички дефинисани типови</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-10_korisnicki_tipovi_01_upotreba>
+                    <h5>9.1 Набројиви типови и структуре</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../10_korisnicki_tipovi_01_upotreba/korisnicki_tipovi_01a_enum_citanje.html><div class="studioLecture" id=activity-korisnicki_tipovi_01a_enum_citanje><i class="fas fa-file-alt activity-icon"></i>Набројиви типови</div></a>
+                <a href=../10_korisnicki_tipovi_01_upotreba/korisnicki_tipovi_01b_struct_citanje.html><div class="studioLecture" id=activity-korisnicki_tipovi_01b_struct_citanje><i class="fas fa-file-alt activity-icon"></i>Структуре</div></a>
+                <a href=../10_korisnicki_tipovi_01_upotreba/korisnicki_tipovi_01c_test.html><div class="studioLecture" id=activity-korisnicki_tipovi_01c_test><i class="far fa-question-circle activity-icon"></i>Набројиви типови и структуре - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-11_fajlovi_00_uvod>
+                    <h5>10 Фајлови</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../11_fajlovi_00_uvod/fajlovi_00_uvod.html><div class="studioLecture" id=activity-fajlovi_00_uvod><i class="fas fa-file-alt activity-icon"></i>Фајлови</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-11_fajlovi_01_upravljanje>
+                    <h5>10.1 Управљање фајловима</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../11_fajlovi_01_upravljanje/fajlovi_01a_upravljanje_citanje.html><div class="studioLecture" id=activity-fajlovi_01a_upravljanje_citanje><i class="fas fa-file-alt activity-icon"></i>Управљање фајловима</div></a>
+                <a href=../11_fajlovi_01_upravljanje/fajlovi_01b_upravljanje_test.html><div class="studioLecture" id=activity-fajlovi_01b_upravljanje_test><i class="far fa-question-circle activity-icon"></i>Управљање фајловима - квиз</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-11_fajlovi_02_upotreba>
+                    <h5>10.2 Читање и упис података у текстуални фајл</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../11_fajlovi_02_upotreba/fajlovi_02a_io_citanje.html><div class="studioLecture" id=activity-fajlovi_02a_io_citanje><i class="fas fa-file-alt activity-icon"></i>Читање и упис података у текстуални фајл</div></a>
+                <a href=../11_fajlovi_02_upotreba/fajlovi_02b_io_test.html><div class="studioLecture" id=activity-fajlovi_02b_io_test><i class="far fa-question-circle activity-icon"></i>Текстуални фајлови - квиз</div></a>
+                <a href=../11_fajlovi_02_upotreba/fajlovi_02c_io_zadaci.html><div class="studioLecture" id=activity-fajlovi_02c_io_zadaci><i class="fas fa-file-alt activity-icon"></i>Текстуални фајлови - вежбање</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-11_fajlovi_03_cmdlineargs>
+                    <h5>10.3 Аргументи командне линије програма</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../11_fajlovi_03_cmdlineargs/fajlovi_03a_cmdargs_citanje.html><div class="studioLecture" id=activity-fajlovi_03a_cmdargs_citanje><i class="fas fa-file-alt activity-icon"></i>Аргументи командне линије програма</div></a>
+                <a href=../11_fajlovi_03_cmdlineargs/fajlovi_03b_cmdargs_test.html><div class="studioLecture" id=activity-fajlovi_03b_cmdargs_test><i class="far fa-question-circle activity-icon"></i>Аргументи командне линије програма - квиз</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="id1">
+<h1>Записивање алгоритма<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Први алгоритми су били описивани помоћу примера, користећи обичан говорни језик. Оваква задавања алгоритама зовемо <strong>неформалним</strong> и током дугог времена то је било довољно, поготово за мање осетљиве поступке. Ако неки детаљ и није био сасвим објашњен, здравим разумом се могло закључити како треба спроводити поступак у таквим случајевима.</p>
+<p>Како су људи почињали да се баве све комплексинијим стварима, тако се све више осећала потреба за већом прецизношћу у изражавању алгоритама. При слободнијем тумачењу поступка код тешких и мање познатих проблема постоји ризик да се недовољно прецизан поступак погрешно протумачи. Када је реч о важном и скупом поступку, недопустиво је да исход спровођења алгоритма зависи од нечијег тумачења, намера, воље и слично. Испоставило се да, исто као и у математици и другим људским делатностима, обичан језик није довољно прецизан за овакву употребу, па је за даљи развој алгоритмике било неопходно да се развије <strong>формалан начин изражавања (записивања) алгоритама</strong>.</p>
+<p>Формализам у изражавању алгоритама је отворио пут ка оспособљавању машина за извршавање тих алгоритама. Машине се не упуштају у тумачење нејасних делова, оне се чак граде тако да уопште не почињу да извршавају „алгоритам” који им је дат, ако у том „алгоритму” постоји макар и најмањи нејасан део (ако постоји нејасан део, онда то и није алгоритам). Зато је потреба за потпуном прецизношћу и формалним записом алгоритама нарочито порасла током двадесетог века, што је утицало и на нагли развој алгоритмике и рачунарства уопште.</p>
+<p>При формалном начину изражавања се користе формуле и симболи са прецизно одређеним значењем. Ако се и користе речи говорног језика, њима је такође додељено поптуно одређено значење, које се може прилично разликовати од уобичајеног, непрецизног, заснованог на општем разумевању језика. Као што се у математици тачно зна шта је таутологија, и значење те речи није исто као у нпр. филозофији или књижевности, тако се у алгоритмици зна шта значе речи циклус, функција или речник.</p>
+<div class="section" id="id2">
+<h2>Начини изражавања и записивања алгоритма<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3>Природан језик<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Свакако први и најједноставнији начин изражавања алгоритама су били природни језици, о чему је већ било говора. Предност овог начина је што не захтева посебну обуку или припрему, али велика мана му је недовољна прецизност.</p>
+</div>
+<div class="section" id="id4">
+<h3>Дијаграм тока<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Дијаграм тока (енгл. <em>flowchart</em>) служи да сликовито представи процес рада током решавања оређеног проблема. Састоји се од блокова различитог облика, повезаних стрелицама, као у примеру на следећој слици. У сваком блоку се налази текст који описује један корак (активност) у решавању проблема, а сваки облик оквира има посебно значење.</p>
+<a class="reference internal image-reference" href="../_images/dijagram_toka_lampa.png"><img alt="../_images/dijagram_toka_lampa.png" class="align-center" src="../_images/dijagram_toka_lampa.png" style="width: 500px;" /></a>
+<p>Тако на пример, почетни блок који садржи назив поступка има овални облик, блокови у облику ромба или шестоугла садрже питања, а блокови у облику правоугаоника садрже акције. Овај начин представљања поступака је лако разумљив, а прецизнији је од говорног језика. Популаран је међу људима који обављају техничке послове, а не баве се нужно и програмирањем (инжењери разних струка, организатори посла, вође тимова). Дијаграм тока може да буде мање или више детаљан и прецизан, у складу са потребама.</p>
+<p>Дијаграми тока су ушли у употребу 1920-тих година у САД и тада још нису имали везе са програмирањем. Са развојем програмских језика пар деценија касније постали су популарни и у овој области. Програмски језици 1950-тих и 1960-тих (Фортран, Бејсик, Кобол…) су и даље били прилично тешки за читање и разумевање, мада знатно читљивији од претходних. Зато је чак и инжењерима било потребно да осим програмом, алгоритме представе и на неки лакше читљив начин. Касније, са појавом модернијих програмских језика, читање и писање кода је постало једноставније па је значај и популарност овог сликовитог начина приказивања алгоритма данас међу програмерима много мања него раније.</p>
+<p>У следећем примеру ћемо употребити дијаграм тока за приказ прецизног поступка решавања једног задатка.</p>
+
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p><strong>Пример - пола пута</strong></p>
+<p>Ђура је прво током <span class="math notranslate nohighlight">\(t_1\)</span> секунди возио брзином <span class="math notranslate nohighlight">\(v_1 {m \over s}\)</span>, а затим током <span class="math notranslate nohighlight">\(t_2\)</span> секунди возио брзином <span class="math notranslate nohighlight">\(v_2 {m \over s}\)</span>. Колико времена је требало Ђури да пређе половину пута који је прешао?</p>
+
+    </p></div></div>
+<p>За решавање овог задатка треба прво одредити укупан пређени пут, а то је <span class="math notranslate nohighlight">\(s = t_1 \cdot v_1 + t_2 \cdot v_2\)</span>. Половину укупног пута можемо да означимо са <span class="math notranslate nohighlight">\(s_p = {s \over 2}\)</span>. Затим треба проверити да ли је Ђура у првих <span class="math notranslate nohighlight">\(t_1\)</span> секунди прешао бар половину пута. Ако јесте, тј. ако је <span class="math notranslate nohighlight">\(t_1 \cdot v_1 \ge s_p\)</span>, онда је тражено време <span class="math notranslate nohighlight">\(s_p \over v_1\)</span>. У противном је тражено време једнако <span class="math notranslate nohighlight">\(t_1 + {{s_p - t_1 \cdot v_1} \over v_2}\)</span>.</p>
+<p>Поступак решавања овог задатка може да се прикаже следећим дијаграмом тока:</p>
+<a class="reference internal image-reference" href="../_images/dijagram_toka_pola_puta.png"><img alt="../_images/dijagram_toka_pola_puta.png" class="align-center" src="../_images/dijagram_toka_pola_puta.png" style="width: 548px;" /></a>
+</div>
+<div class="section" id="id5">
+<h3>Псеудо-код<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Псеудо-код је још један популаран начин изражавања алгоритама. Прецизнији је и зато погоднији од природног језика, али није потпуно прецизан. Погодан је за размену идеја међу људима, односно за учење и стицање опште представе о неком алгоритму без улажења у све техничке детаље који су потребни за његово извршавање (поготово када треба да га извршава машина). Зато псеудо-код може да буде користан у настави, нарочито код ученика са искуством (нпр. студенти) када намера излагача није да се алгоритам изврши, него да се разуме основна идеја. Додавање неопходних детаља би у тим ситуацијама замаглило основну идеју и одвукло пажњу на детаље са којим се слушаоци могу и сами снаћи уз додатан труд.</p>
+<p>Псеудо-код може да буде мање или више детаљан и прецизан, у складу са потребама у сваком конкретном случају.</p>
+<p>Када решавамо неки проблем, псеудо-код може да буде од помоћи у почетној фази решавања, када проблем разлажемо на једноставније целине, које затим даље разрађујемо. Тако прва верзија записа идеје у псеудо-коду може да представља само грубе црте поступка, а затим да се постепено додају детаљи, све до потпуне формализације и преласка на прави програмски код.</p>
+<p>Примера ради, поступак са лампом која не светли, који је претходно представљен дијаграмом тока, може се помоћу псеудо кода изразити овако (ово је један од начина):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ако</span> <span class="n">лампа</span> <span class="n">није</span> <span class="n">укључена</span>
+    <span class="n">укључи</span> <span class="n">лампу</span>
+<span class="n">иначе</span><span class="p">,</span> <span class="n">ако</span> <span class="n">је</span> <span class="n">сијалица</span> <span class="n">прегорела</span>
+    <span class="n">замени</span> <span class="n">сијалицу</span>
+<span class="n">иначе</span>
+    <span class="n">поправи</span> <span class="n">лампу</span>
+</pre></div>
+</div>
+<p>Поступак решавања задатка о половини пута може се на овај начин представити псеудо-кодом:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">прихвати</span> <span class="n">податке</span> <span class="n">t1</span><span class="p">,</span> <span class="n">V1</span><span class="p">,</span> <span class="n">t2</span><span class="p">,</span> <span class="n">V2</span>
+<span class="n">стави</span> <span class="p">(</span><span class="n">t1</span> <span class="n">V1</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">t2</span> <span class="n">V2</span><span class="p">)</span> <span class="n">у</span> <span class="n">S</span>
+<span class="n">стави</span> <span class="n">S</span><span class="o">/</span><span class="mi">2</span> <span class="n">у</span> <span class="n">Sp</span>
+<span class="n">ако</span> <span class="n">је</span> <span class="n">t1</span> <span class="n">V1</span> <span class="n">веће</span> <span class="n">или</span> <span class="n">једнако</span> <span class="n">од</span> <span class="n">Sp</span>
+    <span class="n">стави</span> <span class="n">Sp</span> <span class="o">/</span> <span class="n">V1</span> <span class="n">у</span> <span class="n">t</span>
+<span class="n">иначе</span>
+    <span class="n">стави</span> <span class="n">t1</span> <span class="o">+</span> <span class="p">((</span><span class="n">sp</span> <span class="o">-</span> <span class="n">t1</span> <span class="n">V1</span><span class="p">)</span> <span class="o">/</span> <span class="n">V2</span><span class="p">)</span> <span class="n">у</span> <span class="n">t</span>
+<span class="n">резултат</span> <span class="n">је</span> <span class="n">t</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>Програмски језик<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Програмски језици су, као што знамо, развијени да би људи могли на тим језицима да пишу формална упутства за машине. Таква фпрмална упутства за машине се називају програми. Данас постоји око 700 програмских језика, од тога око 250 значајних. Програми написани на неком од програмских језика представљају најпрецизнији (потпуно прецизан) начин изражавања алгоритама и једино они се користе за задавање поступака машинама. Остали начини записивања алгоритама служе само за међуљудску комуникацију, али то не значи да програми служе само за комуникацију човека и машине. Програмски језици су значајно еволуирали током деценија и постали лакши за читање, писање и разумевање, тако да сада није необично да се програми користе и за саопштавање алгоритама другим људима. Осим тога, пошто програмирање углавном није индивидуални посао, програмски код који је писао један човек врло често читају, допуњавају или преправљају други људи.</p>
+<p>Као пример еволуције програмских језика, погледајмо како би један исти задатак био решен на језику <em>FORTRAN</em>, у верзији тог језика која је била актуелна током 1960-тих година, а затим и решење на језику Пајтон (<em>Python</em>), који је актуелан данас. Задатак се састоји у томе да се учита цео број <em>N</em>, а затим <em>N</em> реалних бројева и да се испише средња вредност учитаних бројева наког одбацивања једне најмање и једне највеће вредности од <em>N</em> учитаних. На пример, ако се учитава пет реалних бројева 2.5, 3.1, 3.6. 3.8, 3.8, треба исписати број 3.5 јер је то просек бројева 3.1, 3.6. и 3.8 (бројеви не морају да се учитавају редом по величини).</p>
+<p>Решење на Фортрану:</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="w">    </span><span class="k">READ</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">501</span><span class="p">)</span><span class="w"> </span><span class="n">N</span><span class="w"></span>
+<span class="mi">501</span><span class="w"> </span><span class="k">FORMAT</span><span class="p">(</span><span class="n">I5</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">READ</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">502</span><span class="p">)</span><span class="w"> </span><span class="n">A</span><span class="w"></span>
+<span class="mi">502</span><span class="w"> </span><span class="k">FORMAT</span><span class="p">(</span><span class="n">F5</span><span class="p">.</span><span class="mi">2</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">ZBIR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A</span><span class="w"></span>
+<span class="w">    </span><span class="n">ANAJVECI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A</span><span class="w"></span>
+<span class="w">    </span><span class="n">ANAJMANJI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A</span><span class="w"></span>
+<span class="w">    </span><span class="k">DO </span><span class="mi">20</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">N</span><span class="w"></span>
+<span class="w">    </span><span class="k">READ</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">502</span><span class="p">)</span><span class="w"> </span><span class="n">A</span><span class="w"></span>
+<span class="w">    </span><span class="n">ZBIR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ZBIR</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">A</span><span class="w"></span>
+<span class="w">    </span><span class="k">IF</span><span class="w"> </span><span class="p">(</span><span class="n">ANAJMANJI</span><span class="w"> </span><span class="p">.</span><span class="n">LE</span><span class="p">.</span><span class="w"> </span><span class="n">A</span><span class="p">)</span><span class="w"> </span><span class="k">GO</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="mi">10</span><span class="w"></span>
+<span class="w">    </span><span class="n">ANAJMANJI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A</span><span class="w"></span>
+<span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="p">(</span><span class="n">ANAJVECI</span><span class="w"> </span><span class="p">.</span><span class="n">GE</span><span class="p">.</span><span class="w"> </span><span class="n">A</span><span class="p">)</span><span class="w"> </span><span class="k">GO</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="mi">20</span><span class="w"></span>
+<span class="w">    </span><span class="n">ANAJVECI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A</span><span class="w"></span>
+<span class="w"> </span><span class="mi">20</span><span class="w"> </span><span class="k">CONTINUE</span>
+<span class="k">    </span><span class="n">PROSEK</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">ZBIR</span><span class="o">-</span><span class="n">ANAJMANJI</span><span class="o">-</span><span class="n">ANAJVECI</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">N</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">WRITE</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">601</span><span class="p">)</span><span class="w"> </span><span class="n">PROSEK</span><span class="w"></span>
+<span class="mi">601</span><span class="w"> </span><span class="k">FORMAT</span><span class="p">(</span><span class="n">F10</span><span class="p">.</span><span class="mi">2</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">STOP</span>
+<span class="k">    END</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Решење на Пајтону:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">zbir</span> <span class="o">=</span> <span class="n">najmanji</span> <span class="o">=</span> <span class="n">najveci</span> <span class="o">=</span> <span class="n">a</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+    <span class="n">zbir</span> <span class="o">=</span> <span class="n">zbir</span> <span class="o">+</span> <span class="n">a</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">najmanji</span> <span class="o">&gt;</span> <span class="n">a</span><span class="p">):</span> <span class="n">najmanji</span> <span class="o">=</span> <span class="n">a</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">najveci</span> <span class="o">&lt;</span> <span class="n">a</span><span class="p">):</span> <span class="n">najveci</span> <span class="o">=</span> <span class="n">a</span>
+<span class="nb">print</span><span class="p">((</span><span class="n">zbir</span> <span class="o">-</span> <span class="n">najmanji</span> <span class="o">-</span> <span class="n">najveci</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Ако се допусти заузимање више меморије (што у данашње време великих меморија више и није проблем), на Пајтону се може написати још компактније решење:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+<span class="nb">print</span><span class="p">((</span><span class="nb">sum</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">-</span> <span class="nb">min</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">-</span> <span class="nb">max</span><span class="p">(</span><span class="n">a</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Осим што је дужи, програм на Фортрану је и тежи за разумевање. Зато не чуди да је програмирање дуго било дисциплина само за инжењере, односно људе са израженим способностима за технику, који су способни да се служе компликованим формалним записима. Овде се нећемо бавити Фортраном као језиком, али смо желели да илуструјемо како је изгледало програмирање пре неколико деценија. Пример је још упечатљивији када се има у виду да су тадашњи програмери били срећни што више не морају да пишу програме на симболичком језику (енгл. <em>assembly language</em>, код нас познат и под жаргонским називом „асемблер”), који се разликује од рачунара до рачунара, у коме су програми још дужи и тежи за разумевање, а писање захтева дужу и комплекснију обуку и врло детаљно знање о томе како рачунари функционишу „изнутра”.</p>
+<p>Са друге стране, програме на Пајтону готово да може да разуме свако ко зна неколико речи енглеског језика. Јасно је да се овакви програмски језици могу учити лакше и брже, са мање предзнања и мање апстрактног размишљања, да захтевају мање помоћних средстава за објашњавање алгоритма другим људима, или се чак користе и за директну комуникацију алгоритама међу људима.</p>
+</div>
+</div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="algoritmi_01_pojam.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>

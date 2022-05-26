@@ -1,0 +1,982 @@
+courseId: kurs-prvi-spec-IT
+lang: sr-Cyrl
+title: Програмирање за први разред специјализованих ИТ одељења
+description:
+  longDescription: |
+    Овај курс је намењен ученицима специјализованог ИТ одељена 1. разреда за предмет Програмирање 1. Материјал је организован по целинама. Пролазећи кроз курс изучаваћете следеће:
+    <ul>
+    <li style=''color:white''> шта су алгоритми и како се користе, од чега се састоји окружење за развој програма </li>
+    <li style=''color:white''> какви све подаци постоје у програмима и шта може да се ради са њима </li>
+    <li style=''color:white''> шта су гранања у програму и како се користе </li>
+    <li style=''color:white''> које врсте циклуса постоје, како се пишу и како раде </li>
+    <li style=''color:white''> које су основне операције над подацима, које се могу извести помоћу циклуса </li>
+    <li style=''color:white''> како се основне операције могу комбиновати да се реше сложенији задаци</li>
+    <li style=''color:white''> шта је низ, чему служи и како се користи у програмима, какве проблеме можемо да решимо употребом низова</li>
+    <li style=''color:white''> које су сличности и разлике између стрингова, низова и листи </li>
+    <li style=''color:white''> шта су, чему служе и како се користе матрице </li>
+    <li style=''color:white''> шта су, чему служе и како се користе набројиви типови и структуре </li>
+    <li style=''color:white''> како се фајлови могу копирати, премештати, преименовати и брисати</li>
+    <li style=''color:white''> како се подаци могу прочитати из текстуалног фајла и уписати у текстуални фајл</li>
+    <li style=''color:white''> како се праве програми са аргументима у командној линији</li>
+    </ul>
+    Поред рада у школи, курс се може пролазити и самостално.
+
+    <p>
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">
+    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+    <br />Овај курс Фондација Петља објавила je под лиценцом <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">Creative Commons Autorstvo 4.0 Međunarodna Licenca (CC BY 4.0)</a>.
+    </p>
+    
+  shortDescription: Програмирање 
+  willLearn: # list
+    - шта су алгоритми и како се користе
+    - од чега се састоји окружење за развој програма
+    - какви све подаци постоје у програмима и шта може да се ради са њима
+    - шта су гранања у програму и како се користе
+    - које врсте циклуса (петљи) постоје, како се пишу и како раде
+    - које су основне операције над подацима, које се могу извести помоћу циклуса
+    - како се основне операције могу комбиновати да се реше сложенији задаци
+    - шта је низ, чему служи и како се користи у програмима
+    - какве проблеме можемо да решимо употребом низова
+    - које су сличности и разлике између стрингова, низова и листи
+    - шта су, чему служе и како се користе матрице
+    - шта су, чему служе и како се користе набројиви типови и структуре
+    - како се фајлови могу копирати, премештати, преименовати и брисати
+    - како се подаци могу прочитати из текстуалног фајла и уписати у текстуални фајл
+    - како се праве програми са аргументима у командној линији
+  requirements:
+    - Инсталирано окружење *Visual Studio* (довољно је инсталирати издање *Community edition* које је бесплатно) или неко друго окружење за развој програма у језику C# (на пример *Mono develop*).
+  toc:
+    - Појам алгоритма
+    - Начини записивања алгоритма
+    - Записивање и разумевање алгоритама
+    
+    - Изглед програма
+    - Језичка правила
+    - Развојно окружење
+    - Кориснички интерфејси
+  
+    - Реални подаци
+    - Целобројни подаци
+    - Заокруживање реалних бројева
+  
+    - Знаковни тип података
+    - Ниске (стрингови)
+    - Логички подаци
+  
+    - Општи и скраћени облик if наредбе
+    - Сложени логички услов
+    - Вишеструка if наредба
+    - Угнежђњно гранање
+    - Наредба switch
+    
+    - Врсте петљи
+    - Наредбе break и continue
+    - Основни алоритми са петљама
+    - Цифре броја
+    - Дељивост
+    - Угнежђене петље
+    - Угнежђене петље - ASCII графика
+    - Угнежђене петље - сегменти
+    - Угнежђене петље - сегменти - тест
+    - Петље - разни задаци
+  
+    - Писање статичких метода
+    - Писање статичких метода - тест
+    - Извршавање метода
+    - Извршавање метода - тест
+    - Пренос аргумената по референци
+    - Пренос аргумената по референци - тест
+    - Корист од метода
+  
+    - Употреба низова
+    - Употреба низова - тест
+    - Низови - задаци
+    - Низ као референцирани тип
+    - Низ као референцирани тип - тест
+    - Листе
+    - Стринг као низ карактера 
+    - Трансформисање стрингова
+  externalLinks: # opciono 
+    - text: Увод у програмирање у програмском језику C#
+      href: https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/spec-it/csharpprirucnik.pdf
+    - text: Збирка алгоритамских задатака - основни ниво
+      href: https://petlja.org/biblioteka/r/kursevi/Zbirka
+
+lessons:
+### СЕКЦИЈА АЛГОРИТМИ
+  - title: 1 Алгоритми
+    folder: 01_algoritam
+    guid: 52d811df-a234-4b5c-bd9f-4b3332f4a01d
+    description: алгоритми
+    activities:
+      - type: reading
+        title: Појам алгоритма
+        file: algoritmi_01_pojam.rst
+        guid: 21cce767-4a92-4df7-87c1-9132f0518d30
+      - type: reading
+        title: Запис алгоритма
+        file: algoritmi_02a_zapis.rst
+        guid: ca27bd0f-b6a5-4220-8527-ec0beffc8889
+      - type: quiz 
+        title: Запис алгоритма - квиз
+        file: algoritmi_02b_zapis_test.rst
+        guid: 1bd311bd-1c52-48b2-9b19-786ed5201434
+      - type: quiz 
+        title: Разумевање алгоритама датих дијаграмом - квиз
+        file: algoritmi_03a_razumevanje_dijagram_test.rst
+        guid: 20edfa44-b5f5-44a0-8250-7f1020159135
+      - type: quiz 
+        title: Разумевање алгоритама датих псеудокодом - квиз
+        file: algoritmi_03b_izvrsavanje_pseudokod_test.rst
+        guid: 1583d350-1892-465f-905a-8fe84c9df1f2
+      - type: reading
+        title: Програмирање слагањем блокова
+        file: algoritmi_04_blokovi.rst
+        guid: e389adff-618f-4c5d-aa4d-2eada365ab2d
+### СЕКЦИЈА ПРОГРАМИРАЊЕ
+  - title: 2 Како се програмира
+    folder: 02_programiranje
+    guid: bf081264-9281-4b21-acbd-c9db60558fe6
+    description: Како се програмира
+    activities:
+      - type: reading
+        title: Изглед програма
+        file: programiranje_01a_izgled_programa.rst
+        guid: 1f62c6fa-04cb-42c5-9b42-e2727e3d76f8
+      - type: reading
+        title: О језичким правилима
+        file: programiranje_02a_jezicka_pravila.rst
+        guid: 6b481f8f-a978-47f5-867c-97e8d553b660
+      - type: quiz 
+        title: Језичка правила - квиз
+        file: programiranje_02b_jezicka_pravila_test.rst
+        guid: 176f0813-3ee2-4265-abc6-47f99c784ba1
+      - type: reading
+        title: Интегрисано окружење за развој програма
+        file: programiranje_03a_okruzenje.rst
+        guid: b1fbc10b-0c6b-4bda-aa92-eb8d67522eb5
+      - type: quiz 
+        title: Интегрисано окружење - квиз
+        file: programiranje_03b_okruzenje_test.rst
+        guid: 73eb54f8-2660-438a-a43d-09301cccc4a3
+      - type: reading
+        title: Кориснички интерфејс програма
+        file: programiranje_04a_CLI_vs_GUI.rst
+        guid: 582b0b72-dc4f-401c-ae3e-4d3f270fe59f
+      - type: quiz 
+        title: Кориснички интерфејс - квиз
+        file: programiranje_04b_CLI_vs_GUI_test.rst
+        guid: a999f545-326d-4721-883d-6a5ddb3f081d
+
+### СЕКЦИЈА ТИПОВИ ПОДАТАКА
+  - title: 3 Променљиве, подаци, типови
+    folder: 03_numericki_tipovi_01_promenljive
+    guid: bc2e8f72-bb44-4a9e-a9a1-8515d65c7bc0
+    description: Променљиве, подаци, типови
+    activities:
+      - type: reading
+        title: Променљиве, подаци, типови
+        file: num_01_tipovi.rst
+        guid: e48f4174-dc61-4af6-95fc-e928a6061e08
+  - title: 3.1 Реални бројеви
+    folder: 03_numericki_tipovi_02_realni
+    guid: f3f09cc0-5629-452a-81eb-bc95740e7eec
+    description: Реални бројеви
+    activities:
+      - type: reading
+        title: Реални бројеви
+        file: num_02a_realni.rst
+        guid: ab83816e-c148-434d-b5d0-ee6a0c9eccb4
+      - type: quiz
+        title: Реални бројеви - квиз
+        file: num_02b_realni_test.rst
+        guid: 1cf857f7-4408-47f4-aaa3-6568fdb3a6ee
+      - type: coding-quiz
+        title: Реални бројеви - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/stolnjak
+          - https://petlja.org/biblioteka/r/Zbirka/rastojanje_tacaka
+          - https://petlja.org/biblioteka/r/Zbirka/povrsina_trougla_datih_temena
+          - https://petlja.org/biblioteka/r/Zbirka/nivo_bazena
+          - https://petlja.org/biblioteka/r/Zbirka/trougao_odredjen_pravom_i_koordinatnim_pocetkom
+          - https://petlja.org/biblioteka/r/Zbirka/putovanje
+          - https://petlja.org/biblioteka/r/Zbirka/biciklista
+          - https://petlja.org/biblioteka/r/Zbirka/sustizanje_automobila
+          - https://petlja.org/biblioteka/r/Zbirka/rastojanje_kuca
+          - https://petlja.org/biblioteka/r/Zbirka/zbirovi_po_tri_stranice_pravougaonika
+          - https://petlja.org/biblioteka/r/Zbirka/taksi
+        guid: 102f882e-f763-42a8-8dd4-3c45acf49913
+    archived-activities:
+      - guid: 72dfdaf4-c078-493f-8ac3-0692ca1299be
+
+  - title: 3.2 Целобројни типови
+    folder: 03_numericki_tipovi_03_celobrojni
+    guid: 3279c229-defa-4799-9a98-6d26e439edbc
+    description: Целобројни типови
+    activities:
+      - type: reading
+        title: Целобројни типови
+        file: num_03a_celobrojni.rst
+        guid: 0af717d1-79ae-4a66-bf3a-c7314a684bb8
+      - type: quiz
+        title: Целобројни типови - квиз
+        file: num_03b_celobrojni_test.rst
+        guid: e8ad434f-842a-4057-95ca-76c184e32a93
+      - type: coding-quiz
+        title: Целобројни типови - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/sahovska_tabla_broj_crnih_polja
+          - https://petlja.org/biblioteka/r/Zbirka/razlomak_u_mesovit_broj
+          - https://petlja.org/biblioteka/r/Zbirka/zbir_cifara
+          - https://petlja.org/biblioteka/r/Zbirka/izbaci_cifru_stotina
+          - https://petlja.org/biblioteka/r/Zbirka/ponoc
+          - https://petlja.org/biblioteka/r/Zbirka/cekanje
+          - https://petlja.org/biblioteka/r/Zbirka/operacije_po_modulu
+          - https://petlja.org/biblioteka/r/Zbirka/zmurke
+          - https://petlja.org/biblioteka/r/Zbirka/lift
+          - https://petlja.org/biblioteka/r/Zbirka/pokloni
+        guid: e97e7a9e-f0fe-4349-8a90-3424e734c4b6
+    archived-activities:
+      - guid: 493864ab-4a68-4e89-99fb-c303022bc584
+
+  - title: 3.3 Конверзије и заокруживање
+    folder: 03_numericki_tipovi_04_zaokruzivanje
+    guid: 0b1b53ea-655b-4f9c-a340-cb39ab1fe776
+    description: Конверзије и заокруживање
+    activities:
+      - type: reading
+        title: Конверзије нумеричких типова и заокруживање
+        file: num_04a_zaokruzivanje.rst
+        guid: 8b27db8c-0465-411a-bf02-8384be24d59c
+      - type: quiz
+        title: Конверзије и заокруживање - квиз
+        file: num_04b_zaokruzivanje_test.rst
+        guid: 49c4c741-7f8e-47e9-bc01-6dbe46e62aff
+      - type: coding-quiz
+        title: Конверзије и заокруживање - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/pertla
+          - https://petlja.org/biblioteka/r/Zbirka/tocak
+          - https://petlja.org/biblioteka/r/Zbirka/kruzna_meta
+          - https://petlja.org/biblioteka/r/Zbirka/skaliranje
+        guid: 107954e6-293b-403b-a309-c7c600904c70
+    archived-activities:
+      - guid: 0c780ba0-2ade-4532-a236-0b24cf6e78ca
+
+  - title: 3.4 Знаковни подаци
+    folder: 04_ostali_tipovi_01_znakovni
+    guid: 99a8420c-4987-47a2-bff0-15f87790f370
+    description: Знаковни подаци
+    activities:
+      - type: reading
+        title: Знаковни подаци
+        file: ostali_tipovi_01a_znakovni.rst
+        guid: b97a07d3-bc99-4f5b-aa39-4c0098a55e20
+      - type: quiz
+        title: Знаковни подаци - квиз
+        file: ostali_tipovi_01b_znakovni_test.rst
+        guid: 56cb9eb7-9176-4a0f-8a68-5d5d1c0fc494
+  - title: 3.5 Текстуални подаци (стрингови, ниске)
+    folder: 04_ostali_tipovi_02_string
+    guid: 80f0aa4f-28eb-462d-9b57-05488102c9d7
+    description: Текстуални подаци
+    activities:
+      - type: reading
+        title: Текстуални подаци (стрингови, ниске)
+        file: ostali_tipovi_02a_string.rst
+        guid: 396b4baf-cb46-4239-94d3-e15dffea192c
+      - type: quiz
+        title: Стрингови - квиз
+        file: ostali_tipovi_02b_string_test.rst
+        guid: c719d49e-14e4-4fea-881b-6e1b112b4775
+  - title: 3.6 Логички подаци
+    folder: 04_ostali_tipovi_03_logicki
+    guid: f9e10ac1-1619-48ef-969a-34105bb7c438
+    description: Логички подаци
+    activities:
+      - type: reading
+        title: Логички подаци
+        file: ostali_tipovi_03a_logicki.rst
+        guid: 5a5f45a4-d449-483d-89f6-99f6ea8820ed
+      - type: quiz
+        title: Логички подаци - квиз
+        file: ostali_tipovi_03b_logicki_test.rst
+        guid: 79785848-b114-421d-87ae-1dd60652c49c
+
+### СЕКЦИЈА ГРАНАЊА
+  - title: 4 Гранања
+    folder: 05_grananja_00_uvod
+    guid: 0a0d0a5e-5cd5-4d23-babf-d204eb2d7f48
+    description: Гранања
+    activities:
+      - type: reading
+        title: Гранања
+        file: grananja_01a_uvod.rst
+        guid: 9edc06a1-bd03-4b00-8337-4d309d71570f
+  - title: 4.1 Наредба if
+    folder: 05_grananja_01_naredba_if
+    guid: db1bef19-38ac-463f-b698-0264d5dc6846
+    description: Наредба if
+    activities:
+      - type: reading
+        title: Наредба if
+        file: grananja_01a_if_else.rst
+        guid: 9379cc15-558b-44ea-8d10-a5391cfd56f9
+      - type: quiz
+        title: Наредба if - квиз
+        file: grananja_01b_if_else_test.rst
+        guid: 679b82f8-ee3b-4445-8781-c79f4d645110
+      - type: coding-quiz
+        title: Наредба if - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/jabuke
+          - https://petlja.org/biblioteka/r/Zbirka/jednakostranicni_trougao_datog_obima
+          - https://petlja.org/biblioteka/r/Zbirka/zbir_godina_brace_i_sestre
+          - https://petlja.org/biblioteka/r/Zbirka/proja
+        guid: 035455a1-275e-475a-9d1a-ad3050f9c1c9
+  - title: 4.2 Остали облици if наредбе
+    folder: 05_grananja_02_ostali_if
+    guid: c74c62d4-a1e0-4557-a923-1a70528d51cf
+    description: Остали облици if наредбе
+    activities:
+      - type: reading
+        title: Остали облици if наредбе
+        file: grananja_02_if_ostali.rst
+        guid: 75e464b2-7a18-4332-bd47-c2763af897d6
+      - type: coding-quiz
+        title: Остали облици if наредбе - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/agregatno_stanje
+          - https://petlja.org/biblioteka/r/Zbirka/uspeh_ucenika
+          - https://petlja.org/biblioteka/r/Zbirka/linearna_jednacina
+          - https://petlja.org/biblioteka/r/Zbirka/pozitivan_deo_intervala
+          - https://petlja.org/biblioteka/r/Zbirka/punoletstvo
+        guid: cc95a8a8-b20d-4e9c-9527-35ae38bca927
+  - title: 4.3 Сложени услови
+    folder: 05_grananja_03_slozeni_uslovi
+    guid: bbf59674-d319-4fda-8706-ab16a35da300
+    description: Сложени услови
+    activities:
+      - type: reading
+        title: Сложени услови
+        file: grananja_03a_slozeni_uslovi.rst
+        guid: f11f6274-e3c2-4262-ae95-e11016f8e3c0
+      - type: quiz
+        title: Сложени услови - квиз
+        file: grananja_03b_slozeni_uslovi_test.rst
+        guid: 0772c59d-1031-4fbb-8b54-3c923bf8bad0
+      - type: coding-quiz
+        title: Сложени услови - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/isti_kvadrant
+          - https://petlja.org/biblioteka/r/Zbirka/radno_vreme
+          - https://petlja.org/biblioteka/r/Zbirka/kucni_red
+          - https://petlja.org/biblioteka/r/Zbirka/tacka_u_pravougaoniku_i_krugu
+          - https://petlja.org/biblioteka/r/Zbirka/postoji_li_trougao_datih_duzina_stranica
+          - https://petlja.org/biblioteka/r/Zbirka/da_li_se_dve_dame_napadaju
+        guid: 57c1f2c3-4d22-4c8a-b606-e1f74d1e79f5
+  - title: 4.4 Неке типичне употребе if наредби
+    folder: 05_grananja_04_tipicne_upotrebe
+    guid: b6bf007b-4451-434b-9c76-5ad1db31abd4
+    description: Неке типичне употребе if наредби
+    activities:
+      - type: reading
+        title: Налажење минимума и максимума
+        file: grananja_04a_upotrebe_min_max.rst
+        guid: d8f5cfce-c558-4b05-ae51-1f904dd390d4
+      - type: coding-quiz
+        title: Налажење минимума и максимума - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/najlosiji_kontrolni
+          - https://petlja.org/biblioteka/r/Zbirka/prosek_skijasa
+          - https://petlja.org/biblioteka/r/Zbirka/najtopliji_dan
+          - https://petlja.org/biblioteka/r/Zbirka/jutarnje_temperature
+        guid: af877067-eae1-400c-9a18-553611852b81
+      - type: reading
+        title: Пребројавање, издвајање и претрага
+        file: grananja_04b_upotrebe_prebrojavanje_izdvajanje.rst
+        guid: 52466393-e324-4dfb-912a-c2403c79bb2c
+      - type: coding-quiz
+        title: Пребројавање и издвајање - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/kvalifikacioni_prag
+          - https://petlja.org/biblioteka/r/Zbirka/berza
+          - https://petlja.org/biblioteka/r/Zbirka/preticanje
+        guid: bea0c2d7-587b-4be1-b872-7d8c88fa6212
+  - title: 4.5 Угнежђено гранање
+    folder: 05_grananja_05_ugnezdjeno_grananje
+    guid: 875befdf-ad63-4e3d-af22-dfb0249dfe9d
+    description: Угнежђено гранање
+    activities:
+      - type: reading
+        title: Угнежђено гранање
+        file: grananja_05a_ugnezdjeno_grananje.rst
+        guid: 2ac83223-33d5-4cec-a495-810b558a7d65
+      - type: quiz
+        title: Угнежђено гранање - квиз
+        file: grananja_05b_ugnezdjeno_grananje_test.rst
+        guid: 9627cccf-efdb-4de3-acb3-b068552ef595
+      - type: coding-quiz
+        title: Угнежђено гранање - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/rastojanje_tacka_duz
+          - https://petlja.org/biblioteka/r/Zbirka/pravougaoni_prsten
+          - https://petlja.org/biblioteka/r/Zbirka/kvadranti_i_ose
+          - https://petlja.org/biblioteka/r/Zbirka/tenis
+        guid: badcb43e-e5d6-4020-8075-dd28c7f1d395
+  - title: 4.6 Наредба switch
+    folder: 05_grananja_06_switch
+    guid: 02277737-4c46-4dd9-89f6-2b7e8b70b83a
+    description: Наредба switch
+    activities:
+      - type: reading
+        title: Наредба switch
+        file: grananja_06_switch.rst
+        guid: 460e9bdf-2085-4423-9cd1-5f90d5d49f47
+      - type: coding-quiz
+        title: Наредба switch - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/broj_dana_u_mesecu
+          - https://petlja.org/biblioteka/r/Zbirka/naziv_meseca
+          - https://petlja.org/biblioteka/r/Zbirka/redni_broj_meseca
+        guid: a8aad72c-5ba7-4815-87a4-da981570fa71
+  - title: 4.7 Гранања - разни задаци
+    folder: 05_grananja_07_razno
+    guid: 2aff34a2-427c-4ba1-af24-e1b654aad0ea
+    description: Гранања - разни задаци
+    activities:
+      - type: coding-quiz
+        title: Гранања - разни задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/skolarina
+          - https://petlja.org/biblioteka/r/Zbirka/odmor_na_pola_puta
+          - https://petlja.org/biblioteka/r/Zbirka/pobednik_u_dve_discipline
+          - https://petlja.org/biblioteka/r/Zbirka/polozaj_dve_prave
+          - https://petlja.org/biblioteka/r/Zbirka/rastojanje_tacka_pravougaonik
+          - https://petlja.org/biblioteka/r/Zbirka/teme_pravougaonika
+          - https://petlja.org/biblioteka/r/Zbirka/sutrasnji_datum
+          - https://petlja.org/biblioteka/r/Zbirka/jucerasnji_datum
+          - https://petlja.org/biblioteka/r/Zbirka/uredi_tri_broja
+          - https://petlja.org/biblioteka/r/Zbirka/orijentacija_trougla
+          - https://petlja.org/biblioteka/r/Zbirka/prozor_i_kutija
+          - https://petlja.org/biblioteka/r/Zbirka/jednakokraki_od_4_duzi
+        guid: 249e1cc2-2a58-4c9c-88bc-b141628b1bfa
+    archived-activities:
+      - guid: 852ee88d-25d9-4806-9df3-6bdab42e1597
+
+### СЕКЦИЈА ПЕТЉЕ
+  - title: 5 Петље
+    folder: 06_petlje_00_uvod
+    guid: 58e67d7b-3103-40d3-b063-595e375b419e
+    description: Петље
+    activities:
+      - type: reading
+        title: Петље
+        file: Petlje_00_uvod.rst
+        guid: 9c7c8212-7b37-46aa-88af-0ee13bbc9815
+  - title: 5.1 Врсте петљи
+    folder: 06_petlje_01_vrste
+    guid: 032f2d92-2564-4f2a-9ec7-a619a6819e07
+    description: Врсте петљи
+    activities:
+      - type: reading
+        title: Врсте петљи
+        file: Petlje_01_VrstePetlji.rst
+        guid: 1ea9c2f5-9958-4e6b-babf-323bfaecaa7e
+  - title: 5.2 Наредбе break и continue
+    folder: 06_petlje_02_break_continue
+    guid: 731e9000-09a5-4752-b72b-c36d5fdbce8c
+    description: Наредбе break и continue
+    activities:
+      - type: reading
+        title: Наредбе break и continue
+        file: Petlje_02_BreakContinue.rst
+        guid: b346d80a-4530-4e18-814d-11b13425c247
+  - title: 5.3 Основни алоритми са петљама
+    folder: 06_petlje_03_osnovni_algoritmi
+    guid: ef4753ec-90b3-43dd-abd3-94fb112e4f0d
+    description: Основни алоритми са петљама
+    activities:
+      - type: reading
+        title: Основни алоритми са петљама
+        file: Petlje_03_OsnovniAlgoritmi.rst
+        guid: e5c723bd-ac24-4f66-8b0d-c48280216743
+      - type: reading
+        title: Агрегатне функције
+        file: Petlje_03a_AgregatneFunkcije.rst
+        guid: f25313ce-eabb-41a1-98b6-ef5965354dc3
+      - type: coding-quiz
+        title: Агрегатне функције - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/faktorijel
+          - https://petlja.org/biblioteka/r/Zbirka/sredine
+          - https://petlja.org/biblioteka/r/Zbirka/teziste
+        guid: 5a51777e-c211-4f42-bb06-a4fab6496c3b
+      - type: reading
+        title: Пресликавања
+        file: Petlje_03b_Preslikavanja.rst
+        guid: f0a358c6-99a8-41f4-9c09-20af9ce64844
+      - type: coding-quiz
+        title: Пресликавања - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/milje_u_kilometre
+          - https://petlja.org/biblioteka/r/Zbirka/tabeliranje_funkcije
+          - https://petlja.org/biblioteka/r/Zbirka/magacin_sokova
+        guid: 59f48285-8008-452b-be3e-7b24df85968b
+      - type: reading
+        title: Пребројавање и издвајање
+        file: Petlje_03c_PrebrojavanjeIzdvajanje.rst
+        guid: a7997863-527e-42fc-95bb-d10ffdf397b3
+      - type: coding-quiz
+        title: Пребројавање и издвајање - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/broj_pojavljivanja
+          - https://petlja.org/biblioteka/r/Zbirka/brojevi_deljivi_sa_3
+          - https://petlja.org/biblioteka/r/Zbirka/kategorije_dzudista
+        guid: 29869cc7-9bcf-4d86-9dac-7944418f0389
+      - type: reading
+        title: Претраживање
+        file: Petlje_03d_Pretrazivanje.rst
+        guid: 538d078e-0c12-48b4-b939-d4a438cc1bae
+      - type: coding-quiz
+        title: Претраживање - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/prvi_i_poslednji_pristup
+          - https://petlja.org/biblioteka/r/Zbirka/negativan_broj
+          - https://petlja.org/biblioteka/r/Zbirka/deljiv_brojevima_od_1_do_n
+        guid: 1015a815-6307-4a5c-8d13-8f97d05f627c
+      - type: reading
+        title: Сложене операције
+        file: Petlje_03e_Kombinovanje.rst
+        guid: 2d50f4bc-cc68-42ac-bbce-9d941cf8602d
+      - type: coding-quiz
+        title: Сложене операције - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/prosecan_rast_cena
+          - https://petlja.org/biblioteka/r/Zbirka/redni_broj_maksimuma
+          - https://petlja.org/biblioteka/r/Zbirka/broj_maksimalnih
+          - https://petlja.org/biblioteka/r/Zbirka/razlika_suma_do_max_i_od_max
+        guid: 1ef232c6-0743-4033-812a-733ddd9b9a78
+  - title: 5.4 Цифре броја
+    folder: 06_petlje_04_cifre
+    guid: 346702fb-b2b2-4dce-9c85-dcbb1626e955
+    description: Цифре броја
+    activities:
+      - type: reading
+        title: Цифре броја
+        file: Petlje_04_CifreBroja.rst
+        guid: bd7e8077-4723-482c-b4a7-4a3d62e8d4b6
+      - type: coding-quiz
+        title: Цифре броја - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/broj_i_zbir_cifara_broja
+          - https://petlja.org/biblioteka/r/Zbirka/ima_li_cifru
+          - https://petlja.org/biblioteka/r/Zbirka/zameni_cifre_0_sa_5
+          - https://petlja.org/biblioteka/r/Zbirka/kombinacija_dva_broja_min_max_cifara
+          - https://petlja.org/biblioteka/r/Zbirka/armstrongovi_brojevi
+        guid: 9c990e94-9444-4556-a515-5f0fd50b5e6b
+  - title: 5.5 Дељивост
+    folder: 06_petlje_05_deljivost
+    guid: 8b618652-59f6-4499-b785-f3547e5fac56
+    description: Дељивост
+    activities:
+      - type: reading
+        title: Дељивост
+        file: Petlje_05_Deljivost.rst
+        guid: 99700ad9-19f0-42f9-a356-3753d07a0dcc
+      - type: reading
+        title: Прости бројеви
+        file: Petlje_05a_ProstiBrojevi.rst
+        guid: 5fdcd72d-d3d4-4f43-97cf-e0663ff39d94
+      - type: coding-quiz
+        title: Прости бројеви - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka3/rastavljanje_na_proste_cinioce
+          - https://petlja.org/biblioteka/r/Zbirka3/dopuna_do_punog_kvadrata
+        guid: a086abce-66d0-48c9-b6cb-d3282a762d45
+      - type: reading
+        title: Еуклидов алгоритам
+        file: Petlje_05b_EuklidovAlgoritam.rst
+        guid: 1edb205c-a19d-4420-b552-86e7a2dc6950
+      - type: coding-quiz
+        title: Еуклидов алгоритам - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka3/euklid
+          - https://petlja.org/biblioteka/r/Zbirka3/ucenici_na_istim_sedistima
+          - https://petlja.org/biblioteka/r/Zbirka3/bilijar_iz_coska
+        guid: 8391ecc3-540c-4b21-b6c2-ea9e8c975700
+  - title: 5.6 Угнежђене петље
+    folder: 06_petlje_06_ugnezdjene
+    guid: 18d40591-f8a2-4353-8e52-1e4a82f0fd6f
+    description: Угнежђене петље
+    activities:
+      - type: reading
+        title: Угнежђене петље
+        file: Petlje_06_UgnezdjenePetlje1.rst
+        guid: 54ebdc19-b993-42fe-b3b3-b0ed508e4270
+      - type: quiz
+        title: Угнежђене петље - квиз
+        file: Petlje_06_UgnezdjenePetlje1_test.rst
+        guid: 7c0b06ca-91cd-4a75-ace4-aadc4de86910
+      - type: reading
+        title: Угнежђене петље - ASCII графика
+        file: Petlje_06_UgnezdjenePetlje2.rst
+        guid: 0629c07a-0b0d-4589-a5e7-d7067ae79025
+      - type: quiz
+        title: Угнежђене петље - ASCII графика - квиз
+        file: Petlje_06_UgnezdjenePetlje2_test.rst
+        guid: a1e11fc6-015a-4119-8874-3cf5f935de92
+      - type: coding-quiz
+        title: Угнежђене петље - ASCII графика - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/kvadrat_od_zvezdica
+          - https://petlja.org/biblioteka/r/Zbirka/romb_od_zvezdica
+          - https://petlja.org/biblioteka/r/Zbirka/trougao_od_zvezdica
+        guid: 48a9f4a6-cf5e-4280-a4f8-ca3afecb8468
+      - type: reading
+        title: Угнежђене петље - сегменти
+        file: Petlje_06_UgnezdjenePetlje3.rst
+        guid: b471e72c-9bd1-4907-b0a4-1ee25bf26e54
+      - type: quiz
+        title: Угнежђене петље - сегменти - квиз
+        file: Petlje_06_UgnezdjenePetlje3_test.rst
+        guid: 04f03226-e9ec-45e2-bcd3-b8129f35e384
+      - type: coding-quiz
+        title: Угнежђене петље - сегменти - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/svi_desni_segmenti_1_n
+          - https://petlja.org/biblioteka/r/Zbirka/svi_levi_segmenti_1_n
+          - https://petlja.org/biblioteka/r/Zbirka/sve_podreci
+          - https://petlja.org/biblioteka/r/Zbirka/sve_podreci_po_opadajucoj_duzini
+        guid: 40e5d763-b0e9-4006-a9cc-b0399aca167b
+  - title: 5.7 Петље - разни задаци
+    folder: 06_petlje_07_razno
+    guid: 19be4249-c741-4548-bda9-92d61efbd6d9
+    description: Петље - разни задаци
+    activities:
+      - type: reading
+        title: Петље - разни задаци
+        file: Petlje_07_RazniZadaci.rst
+        guid: e0fa2e7f-edc2-430b-a66e-f6730e0a26da
+      - type: coding-quiz
+        title: Петље - разни задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/drugi_na_rang_listi
+          - https://petlja.org/biblioteka/r/Zbirka/druga_vrednost_po_velicini
+          - https://petlja.org/biblioteka/r/Zbirka/pobednik_u_tri_discipline
+          - https://petlja.org/biblioteka/r/Zbirka3/najblizi_prost_broj
+          - https://petlja.org/biblioteka/r/Zbirka/rastuce_cifre
+
+          - https://petlja.org/biblioteka/r/problemi/Zbirka/police # latinica
+          - https://petlja.org/biblioteka/r/problemi/Zbirka/suma_segmenata # latinica
+          - https://petlja.org/biblioteka/r/problemi/Zbirka/parno_neparne_serije # latinica
+          - https://petlja.org/biblioteka/r/problemi/Zbirka/transportni_brod # latinica
+
+          - https://petlja.org/biblioteka/r/Zbirka/transformacija_proizvodom_cifara
+          - https://petlja.org/biblioteka/r/Zbirka/najmanji_broj_sa_najvecim_zbirom_parnih_cifara
+        guid: a37e34e1-5e6d-40be-93b9-a4da2f294783
+
+### СЕКЦИЈА СТАТИЧКИ МЕТОДИ
+  - title: 6 Статички методи
+    folder: 07_Metodi_00_uvod
+    guid: c5d7bc36-e7b4-4969-ae84-06d7abe62fea
+    description: Статички методи
+    activities:
+      - type: reading
+        title: Статички методи
+        file: Metodi_00_uvod.rst
+        guid: 28229998-0f13-4251-98fc-b50a213fa985
+  - title: 6.1 Писање статичких метода
+    folder: 07_metodi_01_pisanje
+    guid: ea6a6281-c1b9-4a94-905e-91b774b2469f
+    description: Писање статичких метода
+    activities:
+      - type: reading
+        title: Писање статичких метода
+        file: Metodi_01_pisanje.rst
+        guid: 4ab00bd9-ffb8-4b3f-9ea5-33f87872e628
+      - type: quiz
+        title: Писање статичких метода - квиз
+        file: Metodi_01_pisanje_test.rst
+        guid: 8e1c116f-d58a-41f9-ac13-fe165484802e
+  - title: 6.2 Извршавање метода
+    folder: 07_metodi_02_izvrsavanje
+    guid: 62886cbb-80a2-458e-a3c7-216caeb6c336
+    description: Извршавање метода
+    activities:
+      - type: reading
+        title: Извршавање метода
+        file: Metodi_02_pozivanje.rst
+        guid: e83e5bf0-07ea-473c-8c12-eb541dc78282
+      - type: quiz
+        title: Извршавање метода - квиз
+        file: Metodi_02_pozivanje_test.rst
+        guid: 2c982828-6f8c-43b5-9810-0aab7debb835
+  - title: 6.3 Пренос аргумената по референци
+    folder: 07_metodi_03_prenos_po_referenci
+    guid: 307bed82-78fd-4435-b9a8-b4647d8a6953
+    description: Пренос аргумената по референци
+    activities:
+      - type: reading
+        title: Пренос аргумената по референци
+        file: Metodi_03_reference.rst
+        guid: 8b0ced99-401e-4a1a-9f59-a957ab2fcc73
+      - type: quiz
+        title: Пренос аргумената по референци - квиз
+        file: Metodi_03_reference_test.rst
+        guid: 0a72556e-2531-4ca0-a685-3c462610c0f1
+  - title: 6.4 Корист од метода
+    folder: 07_metodi_04_korist
+    guid: e174ab8a-69a7-4c7d-958b-bac438f29251
+    description: Корист од метода
+    activities:
+      - type: reading
+        title: Корист од метода
+        file: Metodi_04_korist.rst
+        guid: 1dde8477-53ce-4de2-8bb7-ed1cd0df7732
+      - type: coding-quiz
+        title: Методи - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/vocni_paketi
+          - https://petlja.org/biblioteka/r/Zbirka/deo_kvadra_u_prvom_oktantu
+          - https://petlja.org/biblioteka/r/Zbirka/arapski_u_rimski
+          - https://petlja.org/biblioteka/r/Zbirka/sumo_rvaci
+          - https://petlja.org/biblioteka/r/Zbirka/pozicija_najveceg_ugla_trougla
+          - https://petlja.org/biblioteka/r/Lepota # latinica
+          - https://petlja.org/biblioteka/r/Zbirka3/prijateljski_brojevi
+          ## - https://petlja.org/biblioteka/r/Zbirka3/zbir_eksponenata
+        guid: 8ee2132d-1c9d-41eb-b190-c09043dc6b83
+
+### СЕКЦИЈА НИЗОВИ
+  - title: 7 Низови
+    folder: 08_Nizovi_00_uvod
+    guid: f11e1a15-9692-4842-ab02-320cb0bde852
+    description: Низови
+    activities:
+      - type: reading
+        title: Низови
+        file: Nizovi_00_uvod.rst
+        guid: 21ed6e52-9db6-4553-944c-372de2efab93
+  - title: 7.1 Употреба низова
+    folder: 08_nizovi_01_upotreba
+    guid: e5dafe5a-7016-4c0b-a55a-755c442203d6
+    description: Употреба низова
+    activities:
+      - type: reading
+        title: Употреба низова
+        file: nizovi_01_upotreba.rst
+        guid: 30cfec03-0851-4f1f-b8b6-950f7a91f071
+      - type: quiz
+        title: Употреба низова - квиз
+        file: nizovi_01_upotreba_test.rst
+        guid: a3af55e5-14d4-4464-9800-10c2f0b2ef2d
+  - title: 7.2 Низови - вежбање
+    folder: 08_nizovi_02_vezbanje
+    guid: fdce0390-b65d-4734-98a8-7c73601dee66
+    description: Низови - вежбање
+    activities:
+      - type: coding-quiz
+        title: Низови - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/ispis_u_obratnom_redosledu
+          - https://petlja.org/biblioteka/r/Zbirka/parni_i_neparni_elementi
+          - https://petlja.org/biblioteka/r/Zbirka/prosecno_odstupanje_od_minimuma
+          - https://petlja.org/biblioteka/r/Zbirka/minimalno_odstupanje_od_proseka
+          
+          - https://petlja.org/biblioteka/r/problemi/Zbirka/svega_sa_razlicitim_ciframa # latinica
+          
+          - https://petlja.org/biblioteka/r/Zbirka/frekvencija_znaka
+          - https://petlja.org/biblioteka/r/Zbirka/histogram
+          - https://petlja.org/biblioteka/r/Zbirka/vrednost_polinoma
+          - https://petlja.org/biblioteka/r/Zbirka/aritmetika_nad_polinomima
+        guid: 0671a56a-717f-432e-b25b-cf1209b8ab7d
+  - title: 7.3 Низ као референцирани тип
+    folder: 08_nizovi_03_reference
+    guid: 73465152-0dbf-4ebf-a56a-b92cdf928cd2
+    description: Низ као референцирани тип
+    activities:
+      - type: reading
+        title: Низ као референцирани тип
+        file: nizovi_03_reference.rst
+        guid: 58332db6-ddfe-4a6a-91bc-900f07250b47
+      - type: quiz
+        title: Низ као референцирани тип - квиз
+        file: nizovi_03_reference_test.rst
+        guid: ce31c41a-a84c-433d-a348-13251ee48cad
+  - title: 7.4 Листе
+    folder: 08_nizovi_04_liste
+    guid: 28e61c17-88b7-4dca-ac41-216fd318b454
+    description: Листе
+    activities:
+      - type: reading
+        title: Листе
+        file: nizovi_04_liste.rst
+        guid: ef058d5f-4f75-4efd-8b65-5b0185507726
+      - type: quiz
+        title: Листе - квиз
+        file: nizovi_04_liste_test.rst
+        guid: 02abb501-c496-468e-b15e-e8af37fded08
+      - type: reading
+        title: Операције над листама
+        file: nizovi_05_liste_operacije.rst
+        guid: 3fd55b79-3d94-4928-9e56-3e2dbf69c0a6
+      - type: quiz
+        title: Операције над листама - квиз
+        file: nizovi_05_liste_operacije_test.rst
+        guid: 5a074d7c-2f79-4c41-8f3b-d5735fa49ac8
+      - type: reading
+        title: Листе и ефикасност
+        file: nizovi_06_liste_efikasnost.rst
+        guid: c55b8921-da14-488b-953b-f726ab2416a3
+      - type: quiz
+        title: Листе и ефикасност - квиз
+        file: nizovi_06_liste_efikasnost_test.rst
+        guid: 1fd2e560-de60-406a-8d05-7f811bdc1516
+  - title: 7.5 Стринг и низ карактера
+    folder: 08_nizovi_05_string
+    guid: 525549ea-b8d3-42ec-a62b-75baff3c9f44
+    description: Стринг и низ карактера
+    activities:
+      - type: reading
+        title: Стринг и низ карактера
+        file: nizovi_07_string_kao_niz.rst
+        guid: 21b0613b-57e8-410a-b146-ce70871840a6
+      - type: quiz
+        title: Стринг и низ карактера - квиз
+        file: nizovi_07_string_kao_niz_test.rst
+        guid: b369a8d0-f965-4b98-8693-4ec8fe403eb4
+      - type: reading
+        title: Трансформисање стрингова
+        file: nizovi_08_string_izmena.rst
+        guid: 5c060dc2-2f73-466a-9f7f-4f3c20699d6c
+      - type: quiz
+        title: Трансформисање стрингова - квиз
+        file: nizovi_08_string_izmena_test.rst
+        guid: 64caa459-8bae-4f00-9492-2f3856aaeedb
+
+### СЕКЦИЈА МАТРИЦЕ
+  - title: 8 Матрице
+    folder: 09_matrice_00_uvod
+    guid: 343985ba-caf0-49e5-ac02-cf71ff6f2205
+    description: Матрице
+    activities:
+      - type: reading
+        title: Матрице
+        file: matrice_00_uvod.rst
+        guid: 0c984e42-9993-428b-b3c2-6dc374e6b557
+  - title: 8.1 Употреба матрица
+    folder: 09_matrice_01_upotreba
+    guid: 656a0ef4-95a9-408b-ae70-a801118fd1a2
+    description: Употреба матрица
+    activities:
+      - type: reading
+        title: Употреба матрица
+        file: matrice_01a_upotreba.rst
+        guid: b98966f3-7b30-4273-9b35-6e1fd8382be8
+      - type: quiz
+        title: Употреба матрица - квиз
+        file: matrice_01b_upotreba_test.rst
+        guid: 70193c97-f471-498f-8b2d-207886a1e8ca
+      - type: coding-quiz
+        title: Матрице - задаци
+        problems: 
+          - https://petlja.org/biblioteka/r/Zbirka/broj_bombi_u_okolini
+          - https://petlja.org/biblioteka/r/Zbirka/garantovani_iznos
+          - https://petlja.org/biblioteka/r/Zbirka/premestaljka
+          - https://petlja.org/biblioteka/r/Zbirka/magican_kvadrat
+          - https://petlja.org/biblioteka/r/Zbirka/matrica_1248
+          - https://petlja.org/biblioteka/r/Zbirka/najveca_dijagonala
+          - https://petlja.org/biblioteka/r/Zbirka/mnozenje_matrica
+          - https://petlja.org/biblioteka/r/Zbirka/osiguranje
+          - https://petlja.org/biblioteka/r/Zbirka/presedanje
+          - https://petlja.org/biblioteka/r/Zbirka/osobine_relacije
+          - https://petlja.org/biblioteka/r/Zbirka/relacija_zavisnosti
+          - https://petlja.org/biblioteka/r/Zbirka/asocijativnost
+          - https://petlja.org/biblioteka/r/Zbirka/vrhovi_planine
+          - https://petlja.org/biblioteka/r/Zbirka/trouglovi_i_siroka_dijagonala
+        guid: a65812c8-5e3f-46aa-ba2f-91891aae985f
+    archived-activities:
+      - guid: fee9ad4f-19a8-41ba-a3fc-3e51921777c6
+    
+### СЕКЦИЈА КОРИСНИЧКИ ДЕФИНИСАНИ ТИПОВИ
+  - title: 9 Кориснички дефинисани типови
+    folder: 10_korisnicki_tipovi_00_uvod
+    guid: a67e7148-ba2d-4c1c-8029-6ed80df52eae
+    description: Кориснички дефинисани типови
+    activities:
+      - type: reading
+        title: Кориснички дефинисани типови
+        file: korisnicki_tipovi_00_uvod.rst
+        guid: 0f6bb4ce-4dcb-49de-a4c9-b07599c836cc
+  - title: 9.1 Набројиви типови и структуре
+    folder: 10_korisnicki_tipovi_01_upotreba
+    guid: 90327198-bb08-42e1-95f3-e8d7a4988576
+    description: Набројиви типови и структуре
+    activities:
+      - type: reading
+        title: Набројиви типови
+        file: korisnicki_tipovi_01a_enum_citanje.rst
+        guid: e578ccab-ec3c-4757-8962-6d0a88172a64
+      - type: reading
+        title: Структуре
+        file: korisnicki_tipovi_01b_struct_citanje.rst
+        guid: 66ffb6f8-abf5-42ef-a69e-6221e93acd01
+      - type: quiz
+        title: Набројиви типови и структуре - квиз
+        file: korisnicki_tipovi_01c_test.rst
+        guid: ca4f0802-2b42-4b17-9107-8c37de408043
+
+### СЕКЦИЈА ФАЈЛОВИ
+  - title: 10 Фајлови
+    folder: 11_fajlovi_00_uvod
+    guid: 428340ff-b2e5-4c39-a6a0-3117f4927d85
+    description: Фајлови
+    activities:
+      - type: reading
+        title: Фајлови
+        file: fajlovi_00_uvod.rst
+        guid: ddc54fdc-ef5f-48c9-ae54-68c3d4029770
+  - title: 10.1 Управљање фајловима
+    folder: 11_fajlovi_01_upravljanje
+    guid: 162abcc5-c397-4524-97f2-5c4c4705d262
+    description: Управљање фајловима
+    activities:
+      - type: reading
+        title: Управљање фајловима
+        file: fajlovi_01a_upravljanje_citanje.rst
+        guid: 10c534a5-fadd-4682-a5ec-b1525fb4cc39
+      - type: quiz
+        title: Управљање фајловима - квиз
+        file: fajlovi_01b_upravljanje_test.rst
+        guid: 750cffcd-9106-415f-87dc-121f7c3d4724
+  - title: 10.2 Читање и упис података у текстуални фајл
+    folder: 11_fajlovi_02_upotreba
+    guid: a2eea4a1-109f-45c5-8779-19aee938955e
+    description: Читање и упис података у текстуални фајл
+    activities:
+      - type: reading
+        title: Читање и упис података у текстуални фајл
+        file: fajlovi_02a_io_citanje.rst
+        guid: 1800b646-36d2-440a-b2f8-8fd8b48e21cc
+      - type: quiz
+        title: Текстуални фајлови - квиз
+        file: fajlovi_02b_io_test.rst
+        guid: 3fda1e10-5382-4cf3-bbd3-750413600db2
+      - type: reading
+        title: Текстуални фајлови - вежбање
+        file: fajlovi_02c_io_zadaci.rst
+        guid: fb770687-b291-4838-8733-0e3f2e55d195
+  - title: 10.3 Аргументи командне линије програма
+    folder: 11_fajlovi_03_cmdlineargs
+    guid: 2248985c-d05d-4b25-bf80-77aa043a8633
+    description: Аргументи командне линије програма
+    activities:
+      - type: reading
+        title: Аргументи командне линије програма
+        file: fajlovi_03a_cmdargs_citanje.rst
+        guid: 63dcb46a-7b58-4657-9c05-8fdadd94ea10
+      - type: quiz
+        title: Аргументи командне линије програма - квиз
+        file: fajlovi_03b_cmdargs_test.rst
+        guid: 92b02666-236a-47c2-9b1d-9e429d7567ff
