@@ -1,6 +1,6 @@
 # Programiranje za prvi razred specijalizovanih IT odeljenja 
 
-Ovaj repozitorijum posvećen je kursu za Programiranje za treći razred specijalizovanih IT odeljenja . 
+Ovaj repozitorijum posvećen je kursu za Programiranje za prvi razred specijalizovanih IT odeljenja. 
 
 Kurs je na Petljom portalu dotupan ovde: [https://petlja.org/kurs/477/0](https://petlja.org/kurs/369/)
 
