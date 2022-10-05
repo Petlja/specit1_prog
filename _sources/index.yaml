@@ -594,6 +594,9 @@ lessons:
         problems: 
           - https://petlja.org/biblioteka/r/Zbirka3/rastavljanje_na_proste_cinioce
           - https://petlja.org/biblioteka/r/Zbirka3/dopuna_do_punog_kvadrata
+          - https://petlja.org/biblioteka/r/Zbirka3/aeromiting
+          - https://petlja.org/biblioteka/r/Zbirka3/max_nzd
+          - https://petlja.org/biblioteka/r/Zbirka3/mnozenje_i_korenovanje
         guid: a086abce-66d0-48c9-b6cb-d3282a762d45
       - type: reading
         title: Еуклидов алгоритам
@@ -745,6 +748,9 @@ lessons:
           - https://petlja.org/biblioteka/r/Zbirka/pozicija_najveceg_ugla_trougla
           - https://petlja.org/biblioteka/r/Lepota # latinica
           - https://petlja.org/biblioteka/r/Zbirka3/prijateljski_brojevi
+          - https://petlja.org/biblioteka/r/Zbirka/razlicite_cifre
+          - https://petlja.org/biblioteka/r/Zbirka/transformacija_proizvodom_cifara
+          - https://petlja.org/biblioteka/r/Zbirka/armstrongovi_brojevi
           ## - https://petlja.org/biblioteka/r/Zbirka3/zbir_eksponenata
         guid: 8ee2132d-1c9d-41eb-b190-c09043dc6b83
 
