@@ -659,7 +659,7 @@ lessons:
     description: Петље - разни задаци
     activities:
       - type: reading
-        title: Петље - разни задаци
+        title: Петље
         file: Petlje_07_RazniZadaci.rst
         guid: e0fa2e7f-edc2-430b-a66e-f6730e0a26da
       - type: coding-quiz
