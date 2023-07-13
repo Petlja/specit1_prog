@@ -38,7 +38,7 @@
     :answer_a: 1
     :answer_b: 'A'
     :answer_c: код који одговара карактеру '1'
-    :answer_d: израз је синтаксно несиправан
+    :answer_d: израз је синтаксно неисправан
     :correct: a
     :feedback_a: Тачно!
     :feedback_b: Не.
@@ -53,7 +53,7 @@
     :answer_a: 'f'
     :answer_b: 'F'
     :answer_c: код који одговара великом слову 'F'
-    :answer_d: израз је синтаксно несиправан
+    :answer_d: израз је синтаксно неисправан
     :correct: c
     :feedback_a: Не.
     :feedback_b: Не.

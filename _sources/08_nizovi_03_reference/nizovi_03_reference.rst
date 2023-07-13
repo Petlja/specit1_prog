@@ -154,7 +154,7 @@
 Низ као повратна вредност метода
 --------------------------------
 
-Метод се може декларисати и тако да као резулатат враћа низ. Типично је то нови низ који је формиран током рада метода. У поглављу 6.4 `Приручника <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/spec-it/csharpprirucnik.pdf>`_ смо као пример видели метод ``Segment``, који формира и враћа нови низ.
+Метод се може декларисати и тако да као резултат враћа низ. Типично је то нови низ који је формиран током рада метода. У поглављу 6.4 `Приручника <https://petljamediastorage.blob.core.windows.net/root/Media/Default/Kursevi/spec-it/csharpprirucnik.pdf>`_ смо као пример видели метод ``Segment``, који формира и враћа нови низ.
 
 .. code-block:: csharp
 
