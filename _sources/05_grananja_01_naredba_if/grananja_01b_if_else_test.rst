@@ -63,32 +63,32 @@
         
             int m = a > b ? a : b;
 
+.. quizq::
 
+    .. fillintheblank:: grananja_q4
 
-.. fillintheblank:: grananja_q4
-
-    Која је вредност променљиве *n* након извршавања ових наредби?
-    
-    .. code-block:: csharp
-
-        int n = 0;
-        if (n < 0) n = -2 * n;
-        else n = 1 - n;
+        Која је вредност променљиве *n* након извршавања ових наредби?
         
-    - :^1$: Тачан одговор!
-      :.*: Покушај поново.
+        .. code-block:: csharp
 
+            int n = 0;
+            if (n < 0) n = -2 * n;
+            else n = 1 - n;
+            
+        - :^1$: Тачан одговор!
+          :.*: Покушај поново.
 
+.. quizq::
 
-.. fillintheblank:: grananja_q5
+    .. fillintheblank:: grananja_q5
 
-    Која је вредност променљиве *n* након извршавања ових наредби?
-    
-    .. code-block:: csharp
-
-        int a = 3, b = 4;
-        int n = (a > b) ? a - b : 0;
+        Која је вредност променљиве *n* након извршавања ових наредби?
         
-    - :^0$: Тачан одговор!
-      :.*: Покушај поново.
+        .. code-block:: csharp
+
+            int a = 3, b = 4;
+            int n = (a > b) ? a - b : 0;
+            
+        - :^0$: Тачан одговор!
+          :.*: Покушај поново.
 
