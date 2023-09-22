@@ -672,7 +672,7 @@ lessons:
           - https://petlja.org/biblioteka/r/Zbirka/rastuce_cifre
 
           - https://petlja.org/biblioteka/r/problemi/Zbirka/police # latinica
-          - https://petlja.org/biblioteka/r/problemi/Zbirka/suma_segmenata # latinica
+        #  - https://petlja.org/biblioteka/r/problemi/Zbirka/suma_segmenata # latinica
           - https://petlja.org/biblioteka/r/problemi/Zbirka/parno_neparne_serije # latinica
           - https://petlja.org/biblioteka/r/problemi/Zbirka/transportni_brod # latinica
 
@@ -746,7 +746,7 @@ lessons:
           - https://petlja.org/biblioteka/r/Zbirka/arapski_u_rimski
           - https://petlja.org/biblioteka/r/Zbirka/sumo_rvaci
           - https://petlja.org/biblioteka/r/Zbirka/pozicija_najveceg_ugla_trougla
-          - https://petlja.org/biblioteka/r/Lepota # latinica
+        # - https://petlja.org/biblioteka/r/Lepota # latinica
           - https://petlja.org/biblioteka/r/Zbirka3/prijateljski_brojevi
           - https://petlja.org/biblioteka/r/Zbirka/razlicite_cifre
           - https://petlja.org/biblioteka/r/Zbirka/transformacija_proizvodom_cifara
@@ -790,7 +790,7 @@ lessons:
           - https://petlja.org/biblioteka/r/Zbirka/prosecno_odstupanje_od_minimuma
           - https://petlja.org/biblioteka/r/Zbirka/minimalno_odstupanje_od_proseka
           
-          - https://petlja.org/biblioteka/r/problemi/Zbirka/svega_sa_razlicitim_ciframa # latinica
+        #  - https://petlja.org/biblioteka/r/problemi/Zbirka/svega_sa_razlicitim_ciframa # latinica
           
           - https://petlja.org/biblioteka/r/Zbirka/frekvencija_znaka
           - https://petlja.org/biblioteka/r/Zbirka/histogram
