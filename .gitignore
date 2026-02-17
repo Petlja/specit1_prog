@@ -12,3 +12,6 @@ course.json
 _build
 override.json
 export
+docs
+uv.lock
+.vscode
